@@ -1,0 +1,323 @@
+
+#glance_cobrowse_btn_al::before {
+    content: "";
+}
+#glance_expand_al::before {
+    content: "";
+}
+#glance_cobrowse_btn.not_in_session #glance_start_label,
+#glance_cobrowse_btn.not_in_session div {
+    display: none;
+}
+@-webkit-keyframes blink {
+    0% {
+        background-image: none;
+    }
+    50% {
+        background-image: url("../styles/../images/icon2.200734961.png");
+    }
+    100% {
+        background-image: none;
+    }
+}
+@keyframes blink {
+    0% {
+        background-image: none;
+        opacity: 0.7;
+    }
+    50% {
+        background-image: url("../styles/../images/icon2.200734961.png");
+        opacity: 1;
+    }
+    100% {
+        background-image: none;
+        opacity: 0.7;
+    }
+}
+#glance_ssnkey_box::after {
+    content: "";
+}
+#glance_show_btn::before {
+    content: "";
+}
+#glance_stop_btn::before {
+    content: "";
+}
+#glance_keyless_prompt::before {
+    content: "";
+}
+#glance_key_prompt::before {
+    content: "";
+}
+#glance_ssn_starting::before {
+    content: "";
+}
+#glance_ssn_info::before {
+    content: "";
+}
+#glance_ssn_info::after {
+    content: "";
+}
+#glance_yes::before {
+    content: "";
+}
+#glance_no::before {
+    content: "";
+}
+.glance_confirm_rc::before {
+    content: "";
+}
+.glance_confirm_xd::before {
+    content: "";
+}
+.glance_confirm_show::before {
+    content: "";
+}
+.glance_confirm_3rdparty::before {
+    content: "";
+}
+#glance_terms_title::before {
+    content: "";
+}
+#glance_terms .data::before {
+    content: "";
+}
+#glance_accept::before {
+    content: "";
+}
+#glance_decline::before {
+    content: "";
+}
+#glance_msg_ok::before {
+    content: "";
+}
+#glance_terms_text::before {
+    content: "";
+}
+#glance_terms_link::before {
+    content: "";
+}
+#glance_ssnkey_box #glance_ssn_key {
+        color: #007cbe;
+        background-color: rgb(249, 249, 249);
+        font-size:24px;
+        font-weight: bold;
+}
+#glance_gesture {
+    border-color: rgb(249, 105, 0);
+}
+#glance_agent_cursor2 {
+    background-image: url("../styles/../images/agentcursor2.200734961.png");
+}
+#glance_agent_cursor {
+    background-image: url("../styles/../images/agentcursor2.200734961.png");
+    background-size: contain;
+}
+#glance_border {
+    border-color: rgb(241, 208, 15);
+}
+#glance_border.ie9 {
+    background-color: rgb(241, 208, 15);
+}
+#glance_border.glance_rcenabled {
+    border-color: rgb(205, 8, 8);
+}
+#glance_border.glance_rcenabled.ie9 {
+    background-color: rgb(205, 8, 8);
+}
+.glance_ui_titlebar #glance_expand {
+    /*background-image: url("../styles/../images/expand2.200734961.png")!important;*/
+}
+#glance_start_label:not(.glance_ui_titlebar) #glance_show_btn, #glance_start_label:not(.glance_ui_titlebar) #glance_stop_btn {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+#glance_start_label:not(.glance_ui_titlebar) #glance_show_btn:hover, #glance_start_label:not(.glance_ui_titlebar) #glance_stop_btn:hover {
+    color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+#glance_start_label #glance_show_btn:hover, #glance_start_label #glance_stop_btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#glance_show_btn, #glance_stop_btn {
+    color: rgb(255, 255, 255);
+   /* background-color: rgba(255, 255, 255, 0.2);*/
+   background-color:#007cbe;
+   font-weight:bold;
+}
+.glance_ui button {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    background: rgb(48, 169, 224);
+}
+.glance_ui button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(9, 141, 208);
+}
+.glance_ui a {
+    font-family: Lato, sans-serif;
+    color: rgb(48, 169, 224);
+}
+.glance_ui a:hover {
+    color: rgb(9, 141, 208);
+    border-bottom-color: rgb(9, 141, 208);
+}
+.glance_ui {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgb(3, 3, 3);
+    background-color: rgb(249, 249, 249);
+    border-color: rgb(207, 207, 207);
+}
+#glance_start_label {
+    background-image: url("../styles/../images/icon2.200734961.png");
+}
+#glance_start_label:not(.glance_ui_titlebar) {
+    background-size: 20px 20px;
+    background-color: rgb(13, 71, 93);
+}
+#glance_cobrowse_btn #glance_tagline {
+    display: block;
+    padding-top: 8px;
+   text-transform:none;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+#glance_cobrowse_btn 
+{
+	
+	left:50px;
+	right:auto;
+}
+.glance_ui_titlebar {
+    /*background-color: rgb(13, 71, 93);*/
+    background-color:#007cbe;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 24px !important;
+    border-top-left-radius: 4px; 
+    border-top-right-radius: 4px;
+	
+}
+.glance_ishow
+{   margin-top:2px;
+    margin-right:20px;
+}
+    
+[role="button"]:focus {
+    text-decoration: underline;
+}
+.glance_ui[role=dialog]
+{
+    position:		fixed;
+ 	z-index:		2147483646;
+	padding:		14px 20px 10px 20px;
+    width:          300px;
+    top:            50%;
+    left:           50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	text-align:		center;
+}
+/* Include glance_ui styles which are needed to show terms and conditions before session starts
+ and cobrowse css is added
+ IE and Safari - pseudo selector style is not applied if dislay:none, must use visilibity*/
+#glance_terms .data {
+    font-size:0px;
+    visibility:hidden;
+}
+#glance_cobrowse_btn.glance_ui_36 {
+    width: auto;
+}
+.glance_ui {
+	line-height:	1.2;
+    border: none;
+    letter-spacing: .5px;
+}
+.glance_ui a {
+    margin: 14px 10px 10px 10px;
+    font-weight: bolder;
+    font-size:84%;
+    display:inline-block;
+    text-decoration: none;
+}
+.glance_ui a:hover {
+    border: none;
+    box-shadow: none;
+    text-decoration: underline;
+}
+.glance_ui button {
+    margin: 0px 10px 0px 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-size:92%;
+    color: #ffffff;
+    padding: 5px 8px 5px 8px;
+	-moz-border-radius: 4px;
+    border-radius: 4px;
+    min-width:65px;
+}
+.glance_ui button:hover {
+    text-decoration: none;
+}
+.glance_ui p {
+    padding: 5px 0px 24px 0px;
+    margin:0px;
+    text-align:     left;
+    line-height: 15.6px;
+    font-weight: normal;
+    font-size:13px;
+    letter-spacing:0.5px;
+    text-align:inherit;
+}
+.glance_ui h2 {
+    color: #000;
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: center;
+}
+#glance_cobrowse_btn h2 {
+    color: inherit;
+    font-weight: bold;
+    font-size:17px;
+    line-height:normal;
+    margin-bottom:10px;
+}
+role="button":focus {
+    text-decoration: underline;
+}
+.glance_ui_titlebar #glance_expand:focus {
+    outline-width: 0;
+    background-color: rgba(200,200,200,0.5);
+}
+.glance_ui_titlebar #glance_expand:hover {
+    outline-width: 0;
+    background-color: rgba(200,200,200,0.5);
+}
+#glance_show_btn, #glance_stop_btn
+{
+	text-transform:none;
+	font-size: 18px;
+}
+ 
+.tandcunderline
+{
+    text-decoration: underline !important;
+    color: #0c2074 !important;
+    font-size: 14px !important;
+    font-family: Lato, sans-serif Helvetica neue Helvetica, Arial, sans-serif inherit !important;
+    }
+.separaterClass
+{
+    width: 0px;
+    float: right;
+    border: 1px solid white;
+    height: 30px;
+    margin-right:3px;
+    }

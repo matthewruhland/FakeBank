@@ -1,0 +1,497 @@
+/*
+CSS RESET
+*/
+.aw-authenticate div,
+.aw-authenticate span,
+.aw-authenticate h1,
+.aw-authenticate h2,
+.aw-authenticate h3,
+.aw-authenticate h4,
+.aw-authenticate h5,
+.aw-authenticate h6,
+.aw-authenticate p,
+.aw-authenticate blockquote,
+.aw-authenticate pre,
+.aw-authenticate a,
+.aw-authenticate abbr,
+.aw-authenticate em,
+.aw-authenticate img,
+.aw-authenticate q,
+.aw-authenticate s,
+.aw-authenticate samp,
+.aw-authenticate small,
+.aw-authenticate strike,
+.aw-authenticate strong,
+.aw-authenticate sub,
+.aw-authenticate sup,
+.aw-authenticate tt,
+.aw-authenticate var,
+.aw-authenticate b,
+.aw-authenticate u,
+.aw-authenticate i,
+.aw-authenticate center,
+.aw-authenticate dl,
+.aw-authenticate dt,
+.aw-authenticate dd,
+.aw-authenticate ol,
+.aw-authenticate ul,
+.aw-authenticate li,
+.aw-authenticate fieldset,
+.aw-authenticate form,
+.aw-authenticate label,
+.aw-authenticate legend,
+.aw-authenticate table,
+.aw-authenticate caption,
+.aw-authenticate tbody,
+.aw-authenticate tfoot,
+.aw-authenticate thead,
+.aw-authenticate tr,
+.aw-authenticate th,
+.aw-authenticate td,
+.aw-authenticate article,
+.aw-authenticate aside,
+.aw-authenticate footer,
+.aw-authenticate header,
+.aw-authenticate hgroup,
+.aw-authenticate nav,
+.aw-authenticate section,
+.aw-authenticate summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font: inherit;
+    vertical-align: baseline;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.aw-authenticate input,
+.aw-authenticate select,
+.aw-authenticate button,
+.aw-authenticate textarea {
+    margin: 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aw-authenticate button,
+.aw-authenticate select,
+.aw-authenticate input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.aw-authenticate article,
+.aw-authenticate aside,
+.aw-authenticate details,
+.aw-authenticate figcaption,
+.aw-authenticate figure,
+.aw-authenticate footer,
+.aw-authenticate header,
+.aw-authenticate hgroup,
+.aw-authenticate menu,
+.aw-authenticate nav,
+.aw-authenticate section {
+    display: block;
+}
+
+.aw-authenticate ol,
+.aw-authenticate ul {
+    list-style: none;
+}
+
+.aw-authenticate blockquote,
+.aw-authenticate q {
+    quotes: none;
+}
+
+.aw-authenticate blockquote:before,
+.aw-authenticate blockquote:after,
+.aw-authenticate q:before,
+.aw-authenticate q:after {
+    content: '';
+    content: none;
+}
+
+.aw-authenticate table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.aw-authenticate .aw-right {
+    float: right;
+    position: relative;
+    z-index: 9;
+}
+
+/*
+CONTROLS TO HIDE CONTENT
+*/
+.sr-only {
+    visibility: hidden;
+    position: fixed;
+    top: -999px;
+    left: -999px;
+}
+
+/* -------- */
+/* BASE CSS */
+/* -------- */
+/* Containers */
+.aw-authenticate {
+    padding: 25px 40px 40px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica "Neue";
+    overflow: hidden;
+}
+
+.aw-authenticate ul li {
+    margin: 10px 0;
+}
+
+.aw-authenticate #aw-password-alignment {
+    position: relative;
+}
+
+.aw-authenticate .error-backdrop {
+    display: block;
+    border: solid 2px #efcacf;
+    border-radius: 4px;
+    background-color: #fff2f1;
+    padding: 15px 15px 15px 15px;
+    margin: 14px 0 14px;
+    position: relative;
+    line-height: 20px;
+}
+
+.aw-authenticate .error-backdrop img {
+    position: absolute;
+    left: 10px;
+    width: 27px;
+}
+
+.aw-authenticate .error-backdrop p {
+    font-weight: bold;
+    font-size: 12px;
+    color: #de162b;
+    line-height: 16px;
+    margin-bottom: 14px;
+    margin-left: 28px;
+    padding: 0 30px 0 0;
+    /*Fix-ADI-1341*/
+}
+
+.aw-authenticate .error-backdrop p:last-of-type {
+    margin-bottom: 0;
+}
+
+.aw-authenticate .error-content {
+    display: inline-block;
+    width: 100%;
+    margin-top: -15px;
+}
+
+/* Interactive Components */
+.aw-authenticate input[type="text"],
+.aw-authenticate input[type="password"],
+.aw-authenticate input[type="number"],
+.aw-authenticate input[type="tel"],
+.aw-authenticate select {
+    width: 100%;
+    background: #FFF;
+    border-radius: 4px;
+    height: 42px;
+    padding: 3px 9px;
+    font-size: 14px;
+    border: solid 1px #CCC;
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    /*margin-bottom: 5%;*/
+}
+
+input[name=personalId],
+input[name=password] {
+    margin-bottom: 0;
+    /* removed important as its affecting other screens*/
+}
+
+.aw-authenticate input[type="text"].error,
+.aw-authenticate input[type="password"].error,
+.aw-authenticate input[type="number"].error,
+.aw-authenticate input[type="tel"].error,
+.aw-authenticate select.error {
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(12, 32, 116, 0.9), 0px 0px 0px 4px rgba(222, 22, 43, 1);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(12, 32, 116, 0.9), 0px 0px 0px 4px rgba(222, 22, 43, 1);
+    box-shadow: 0px 0px 0px 1px rgba(12, 32, 116, 0.9), 0px 0px 0px 4px rgba(222, 22, 43, 1);
+}
+
+.aw-authenticate button {
+    /*margin-top: 15px;*/
+    font-weight: bold;
+    padding: 15px 0 15px;
+    white-space: normal;
+    font-size: 18px;
+    color: #000;
+    background: #FFF;
+    border: solid 1px #000;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    /*margin-bottom: 10px;*/
+}
+
+.aw-authenticate button:hover {
+    background: #EFEFEF;
+}
+
+/* Text Components */
+.aw-authenticate a,
+.aw-authenticate p,
+.aw-authenticate h1,
+.aw-authenticate h2,
+.aw-authenticate h3,
+.aw-authenticate label {
+    color: #000;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+.aw-authenticate a {
+    font-size: 12px;
+}
+
+.aw-authenticate label {
+    /*margin: 15px 0 3px; affecting other screens*/
+    margin: 0px 0 3px;
+    /* added to resolve the style issue*/
+    float: left;
+    clear: both;
+}
+
+.aw-authenticate label#aw-remember-my-id-label,
+.aw-authenticate label#aw-remember-my-id-label-global {
+    font-size: 12px;
+    position: relative;
+    z-index: 9;
+}
+
+.aw-authenticate a {
+    text-decoration: underline;
+}
+
+.aw-authenticate p {
+    margin-bottom: 10px;
+}
+
+.aw-authenticate p.aw-disclosure {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 15px;
+}
+
+.aw-authenticate h2,
+.aw-authenticate h1 {
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aw-authenticate h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aw-authenticate label {
+    float: left;
+    clear: both;
+}
+
+select::-ms-expand {
+    background-color: #fff;
+    border: none;
+}
+
+#customUI {
+    display: inline-block;
+}
+
+.aw-authenticate .error-backdrop p a {
+    /*ADI-1522_ADI-1584*/
+    color: #007CBE;
+    font-weight: normal;
+    margin-right: 5px;
+    width: auto;
+    display: inline-block;
+}
+
+.aw-authenticate #aw-welcomeMessage {
+    display: none;
+}
+
+.aw-authenticate input+br {
+    display: none;
+    /*remove multiple <br> tag from legacy html page and then remove this CSS */
+}
+
+.aw-authenticate a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #0950a0;
+}
+
+.aw-authenticate a:hover {
+    text-decoration: none;
+}
+
+.aw-authenticate input:focus,
+.aw-authenticate select:focus,
+.aw-authenticate button:focus,
+.aw-authenticate textarea:focus,
+.aw-authenticate a:focus,
+.aw-authenticate label:focus,
+.layout__sidebar a:focus,
+.Footer_Container a:focus {
+    outline: 2px solid #109cde !important;
+}
+
+.aw-authenticate .Shield_Questions {
+    /*style_changes_ADI-1579*/
+    text-align: left !important;
+    color: #287db0;
+    margin: 5px 0 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.iframeClass {
+    border: none !important;
+}
+
+#authenticatorheader {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+#aw-idshield-input {
+    margin-bottom: 20px;
+}
+
+div#sharedAuthstepUpContainer h1 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div#sharedAuthstepUpContainer p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.cust_margin_bottom {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.cust_btn {
+    background: #007CBE;
+    border-radius: 5px;
+    padding: 9px 15px !important;
+    text-decoration: none !important;
+    color: #f9f1f1 !important;
+    cursor: pointer;
+    margin-bottom: 50px !important;
+    display: inline-block !important;
+    width: 200px !important;
+}
+
+button#aw-submit-otp {
+    margin-bottom: 10px;
+}
+
+label#aw-six-digit-code {
+    font-size: 14px;
+}
+
+li.forgetanswer_tesla,
+a.forgotpassword_tesla,
+a.forgotid_tesla,
+.rememberid_tesla,
+.disclosure_Tesla {
+    display: none;
+}
+
+label#aw-remember-my-id-label.rememberid_tesla,
+.form-control-placeholder,
+.form-control-pwdplaceholder,
+.form-control-lblplaceholder,
+.form-control-pinplaceholder,
+.Oauth_remember,
+.stepupheader_oauth,
+.Oauthheader_logintoccounts {
+    display: none !important;
+}
+
+/*IE show hide fix*/
+input::-ms-clear,
+input::-ms-reveal {
+    display: none !important;
+}
+
+/*Step Up Styles - In-session Step Up*/
+.sharedauth-modal-open #sharedAuthstepUpContainer {
+    padding: 45px 0 45px 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sharedauth-modal-open #sharedAuthstepUpContainer h2.Shield_Questions {
+    padding-bottom: 25px !important;
+}
+
+.sharedauth-modal-open #sharedAuthstepUpContainer .contain-stepup.sharedauth ul {
+    padding: 0;
+    float: left;
+}
+
+.sharedauth-modal-open #sharedAuthstepUpContainer button#aw-submit-idshield {
+    float: left;
+}
+
+.sharedauth-modal-open #sharedAuthstepUpContainer li.forgetanswer_otherclients {
+    display: inline-block;
+}
+
+.sharedauth-modal-open div#sharedAuthstepUpContainer h1,
+.sharedauth-modal-open div#sharedAuthstepUpContainer h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0 85px 25px 0;
+}

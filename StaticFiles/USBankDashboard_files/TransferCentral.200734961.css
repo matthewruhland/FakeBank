@@ -1,0 +1,448 @@
+.stretch-160 { WIDTH: 160px !important; COLOR: red; }
+.stretch-65 { WIDTH: 65px; HEIGHT: 21px; } /* PCR 945 transfers change */
+.hasDatepicker { HEIGHT: 16px; padding-right:8px; } /*DTSYS00121027 - Production fix - added padding-right:8px;*/
+#IE7 .hasDatepicker {  padding-right:8px;  margin-top:-1px;} /*DTSYS00121027 - Production fix */
+div.middle { VERTICAL-ALIGN: -1.5%; PADDING-LEFT: 5px; }
+.TPCentralCMSContent { BACKGROUND-COLOR: #fef9e8; FONT-SIZE: 12px; COLOR: #666666; BORDER-COLOR: #e7d19a; BORDER-WIDTH: 1px; BORDER-STYLE: solid; }
+/* .marginLeftRight { MARGIN: 15px 15px 0 15px; } NLU - LL */
+.TPCentralcolumnHeaderBg { PADDING: 15px 0px 10px 10px; HEIGHT: 16px; FONT-SIZE: 12px; FONT-WEIGHT: bold; COLOR: #666; }
+.TPCentralAmountText { FONT-SIZE: 12px; FONT-WEIGHT: bold; COLOR: #0c2074; }
+.TPCentralGreenCheck { COLOR: #48b633; FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; HEIGHT: 24px; }
+.TPCentralRedCheck { COLOR: #FF0000; VERTICAL-ALIGN: middle; HEIGHT: 24px; }
+/* DTSYS00162236 - Start, Changes are done to display the error message as per style guide */
+.TPCentralAlertCopyBold { COLOR: #9c0010; FONT-WEIGHT: bold; FONT-SIZE: 14px; LINE-HEIGHT: 18px; PADDING-LEFT: 8px; }
+.TPCentralAlertImage { vertical-align:middle; }
+#lightboxErrorRegion > span{ FONT-SIZE: 14px; }
+#lightboxInstructionRegion > p{ MARGIN-BOTTOM : 15px; }
+/* DTSYS00162236 - End */
+.TPCentralRedCheckNarrow { COLOR: #FF0000; VERTICAL-ALIGN: middle; }
+.TPCentralBoldRed { COLOR: #FF0000; FONT-WEIGHT: bold; } /* replace with textRedBold from common.css */
+.TPCentralLoadingPanelHeight { HEIGHT: 360px; }
+.TPCentralXferPaymentItemRow { MARGIN-RIGHT: 0px; WIDTH: 100%; PADDING-TOP: 15px; PADDING-BOTTOM: 15px; OVERFLOW: hidden; }
+/* .TPCentralStandInPanelHeight { HEIGHT: 60px; } *//* not used  */
+div.TPCentralstandinmode.customeerror { BORDER: 2px solid red; BACKGROUND-COLOR: #F9B3B3; PADDING: 8px; }
+div.TPCentralstandinmode.customalign { TEXT-ALIGN: right; COLOR: red; FLOAT: right; FONT-SIZE: 20px; PADDING: 1px 2px 2px 4px; FONT-WEIGHT: bold; }
+.TPCentralCrossedSquare { HEIGHT: 20px; WIDTH: 20px; BACKGROUND-IMAGE: url(../../Shared/Images/CrossedSquare.200734961.png); }
+.TPCentralExternalAccountsLoading { DISPLAY: block; TEXT-ALIGN: center; POSITION: relative; TOP: 0px; LEFT: 0px; PADDING-TOP: 200px; HEIGHT: 224px; WIDTH: 100%; }
+.TPCentralReviewPaymentAccountInfo { COLOR: #666666; FONT-WEIGHT: normal; PADDING: 5px 0 5px 0px; }
+.TPCentrallightboxDeleteRegion { PADDING: 5px 0 5px 0px; font-weight: bold }
+.TPCentralLightBoxText { COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING: 20px 0px 20px 5px; }
+div.TPCentrallightBoxCloseLink { PADDING: 10px 3px 10px; }
+div.TPCentrallightBoxCloseLink a { FONT-SIZE: 12px; COLOR: #2b85bb; TEXT-DECORATION: underline; }
+div.TPCentrallightBoxCloseLink a:hover { COLOR: #0C2074; TEXT-DECORATION: none; }
+div.TPCentrallightBoxLink { PADDING: 10px 5px 10px; }
+div.TPCentrallightBoxLink a { FONT-SIZE: 12px; COLOR: #2b85bb; TEXT-DECORATION: none; }
+div.TPCentrallightBoxLink a:hover { COLOR: #0C2074; TEXT-DECORATION: underline; }
+.TPCentralLightboxFormLabel { COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING: 5px; }
+div.TPCentralLightBoxBorder { BORDER: 1px solid #e1e1e1; }
+.TPCentralPageTitle { COLOR: #0c2074; FONT-WEIGHT: normal; FONT-SIZE: 24px; }
+.TPCentralBodyCopy { COLOR: #666666; FONT-WEIGHT: normal; FONT-SIZE: 12px; LINE-HEIGHT: 18px; }
+/* Start: PCR214 - Site Contrast*/
+.TPCentralBodyCopy-New { COLOR: #333333; FONT-WEIGHT: normal; FONT-SIZE: 12px; LINE-HEIGHT: 18px; }
+.bodyText
+{
+    padding-bottom: 6px;
+    font-size: 12px;
+    color: #333333;
+}
+.caption
+{
+    padding-bottom: 6px;
+    margin-left: 0;
+    font-weight: bold;
+    color: #333333;
+}
+.fontColor666 { color: #666666 !important; }
+/* End: PCR214 - Site Contrast*/
+.TPCentralAlertCopy { COLOR: #9c0010; FONT-WEIGHT: normal; FONT-SIZE: 12px; LINE-HEIGHT: 18px; }
+.TPCentralHeading2 { COLOR: #0c2074; FONT-WEIGHT: normal; FONT-SIZE: 16px; LINE-HEIGHT: 18px; MARGIN-BOTTOM: 6px; }
+/* Start: PCR214 - Site Contrast*/
+.TPCentralColumnHeaders { COLOR: #333333; FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 16px; }
+/* End: PCR214 - Site Contrast*/
+/* .TPCentralTextCenter { TEXT-ALIGN: center; }  replaced with .textCenter from common.css */
+.whiteRow { BACKGROUND-COLOR: #ffffff; }
+/* .paddedLeft2 { PADDING-LEFT: 20px; } replaced with padLeft20 from common.css */
+/* .paddedRight { PADDING-RIGHT: 15px; } replaced with padRight15 from common.css */
+.TPCentralRecurringFrequencyOptionItemRow { PADDING: 1px 0px; }
+.TPCentralRecurringFrequencyOptionItemExtraRow { PADDING: 3px 0px 3px 24px; }
+label { PADDING-RIGHT: 10px; }
+#editFutureTransfersDialog { HEIGHT: auto; BACKGROUND: #FFFFFF; }
+input[type=radio], input.radio { POSITION: relative; TOP: .20em; }
+#lnkCancelDelete { }
+.ui-datepicker-month, .ui-datepicker-year { COLOR: #FFFFFF; }
+input.ui-recurringOptions  { FLOAT: left; HEIGHT: 18px; }
+div.ui-recurringOptions  { WIDTH: 154px; FLOAT: left; }
+div.ui-recurringOptionsAccelerator  { WIDTH: 164px !important; }
+.ui-recurringOptions select { HEIGHT: 22px; }
+div.ui-smallText { FONT-SIZE: smaller; MARGIN-TOP: 5px; }
+div.ui-topMargined { MARGIN-TOP: 5px; }
+div.ui-categoryItem { MARGIN-RIGHT: -5px; FLOAT: left; OVERFLOW: hidden; }
+span.ui-categoryItem { WIDTH: 70px; FONT-SIZE: smaller;  FLOAT: left; MARGIN-TOP: 4px; }
+div.ui-categoryItem input[type="checkbox"]  { FLOAT: left; }
+div.ui-CategoryList { FLOAT: left; MARGIN-BOTTOM: 10px; }
+div.ui-autoPayAlerts { MARGIN-TOP: 10px; }
+span.ui-autoPayAlerts { FLOAT: left; MARGIN-LEFT: 25px; }
+.Enroll_PDFLink { MARGIN: 10px 0 30px; }
+.Enroll_UnCheckedTerms { BACKGROUND: url(../../Images/Shared/consent-check.200734961.png) no-repeat scroll left center transparent; PADDING: 5px 5px 5px 0; MARGIN-LEFT: -15px; }
+.Enroll_CheckImageSize { height: 15px; width: 40px; }
+.Enroll_NotValidTerms { PADDING: 5px 5px 5px 0px; BACKGROUND: url(../../Images/Shared/Flag-Alerts-red.200734961.png) no-repeat left center; MARGIN-LEFT: -15px; }
+.Enroll_ValidTerms { PADDING: 5px 5px 5px 0px; /* PADDING: 0 0 0 25px;*/ BACKGROUND: url(../../Images/Shared/Flag-Alerts-green.200734961.png) no-repeat left center; MARGIN-LEFT: -15px; }
+.ui-widget select { FONT-SIZE: 12px; }
+.span-55 { WIDTH: 53px; }
+.span-100 { WIDTH: 100px; FLOAT: none; }
+.span-108 { WIDTH: 108px; FLOAT: none; }
+.span-130 { WIDTH: 130px; FLOAT: none; }
+.span-122 { WIDTH: 122px; FLOAT: none; }
+.span-120 { WIDTH: 120px; FLOAT: none; }
+.span-115 { WIDTH: 115px; FLOAT: none; }
+ul .ui-tabs-nav .ui-helper-reset .ui-helper-clearfix .ui-widget-header .ui-corner-all { MARGIN-BOTTOM: -1px; }
+/* Selectmenu TEST BY LORI & JUAN
+----------------------------------*/
+.ui-selectmenu { DISPLAY: block; POSITION: relative; HEIGHT: 2em; TEXT-DECORATION: none; OVERFLOW: hidden; }
+.ui-selectmenu-icon { POSITION: absolute; RIGHT: 6px; MARGIN-TOP: -8px; TOP: 50%; }
+.ui-selectmenu-menu { PADDING: 0; MARGIN: 0; LIST-STYLE: none; POSITION: absolute; TOP: 0; VISIBILITY: hidden; OVERFLOW: auto; }
+.ui-selectmenu-open { VISIBILITY: visible; }
+.ui-selectmenu-menu-popup { MARGIN-TOP: -1px; }
+/* Defect DTSYS00053105-Cori00107054: System should not display Scroll 
+bar for From Drop down menu In the Transfers/Pay My Accounts page */
+.ui-selectmenu-menu-dropdown { WIDTH: auto !important; }
+.ui-selectmenu-menu li { PADDING: 0; MARGIN: 0; DISPLAY: block; BORDER-TOP: 1px dotted transparent; BORDER-BOTTOM: 1px dotted transparent; BORDER-RIGHT-WIDTH: 0 !important; BORDER-LEFT-WIDTH: 0 !important; FONT-WEIGHT: normal !important; }
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a, .ui-selectmenu-hasIcon .ui-selectmenu-status { PADDING-LEFT: 20px; POSITION: relative; MARGIN-LEFT: 5px; }
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon { POSITION: absolute; TOP: 1em; MARGIN-TOP: -8px; LEFT: 0; }
+.ui-selectmenu-open li.ui-selectmenu-item-focus a { }
+.ui-selectmenu-open li.ui-selectmenu-item-selected { }
+.ui-selectmenu-menu li span, .ui-selectmenu-status span { DISPLAY: block; MARGIN-BOTTOM: .2em; TEXT-OVERFLOW: ellipsis; }
+.ui-selectmenu-menu li .ui-selectmenu-item-header { FONT-WEIGHT: bold; }
+.ui-selectmenu-menu li .ui-selectmenu-item-content { }
+.ui-selectmenu-menu li .ui-selectmenu-item-footer { OPACITY: .8; }
+/*for optgroups*/
+.ui-selectmenu-menu .ui-selectmenu-group { FONT-SIZE: 1em; }
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label { LINE-HEIGHT: 1.4em; DISPLAY: block; PADDING: .6em .5em 0; FONT-WEIGHT: bold; }
+.ui-selectmenu-menu .ui-selectmenu-group ul { MARGIN: 0; PADDING: 0; }
+/* OVERRIDE
+   the following over-rides the above default styling (which uses the UI theme). 
+   We're leaving the above in case we want to revert back at some point.
+   
+   When the select menu is transformed via the plugin, the following markup is added and is what is styled:
+	<a style="width: 139px;" tabindex="0" class="ui-selectmenu ui-widget ui-state-default ui-corner-all formItem-inline ui-selectmenu-popup" id="_button_763" role="button" href="#" aria-haspopup="true" aria-owns="_menu_763" aria-expanded="false">
+		<span class="ui-selectmenu-status">[Account name &amp; #]</span>
+		<span class="ui-selectmenu-icon ui-icon ui-icon-triangle-2-n-s"></span>
+	</a>
+*/
+.ui-selectmenu { BORDER-COLOR: #999; BACKGROUND: #fff url('../../../content/shared/images/bgnd-selectmenu.200734961.gif') right -2px; PADDING: 4px; HEIGHT: auto; FONT-SIZE: 11px; }
+.inlineFields li.ui-state-active { COLOR: #999; }
+.ui-selectmenu.ui-selectmenu-focus { BACKGROUND-POSITION: right -50px; BORDER-COLOR: #2B85BB; }
+.ui-selectmenu-icon { DISPLAY: none; }
+.ui-selectmenu.ui-corner-all { -MOZ-BORDER-RADIUS: 0; -WEBKIT-BORDER-RADIUS: 0; BORDER-RADIUS: 0; }
+.ui-selectmenu .usbicon { POSITION: absolute; TOP: 2px; RIGHT: 0px; }
+.ui-state-hover { }
+/* Selectmenu TEST BY LORI & JUAN
+----------------------------------*/
+.CAAFooterLayout { FLOAT: left; PADDING: 4px; }
+#CAASubmitForm th,#CAASubmitForm td { PADDING: 4px 5px 4px 5px; }
+#xferDisclaimers { OVERFLOW: visible; PADDING: 10px 0; MARGIN-TOP: 10px; }
+/* Cori00107921/DTSYS00056581 */
+#IE8 #lblOtherAmountSingle { VERTICAL-ALIGN: top; }
+.font-size-10 { FONT-SIZE: 10px; }
+ /* Cori00110869/DTSYS00068748 */
+table.ui-datepicker-calendar tbody td.earliest a.ui-state-hover.ui-state-default{    COLOR: #333333 !important;}   
+/* DTSYS00073829/Cori00112219 The capain content was painting outside of the dialig*/
+#transfers-payments-confirmation #campaignContentCAA #DashboardBelowWidgets_divTextAdMedia{	MARGIN-RIGHT:0px;	WIDTH:auto;}
+#lightboxDeleteInstructionRegion .TPCentrallightboxDeleteRegion, #lightboxDeleteInstructionRegion .TPCentralReviewPaymentAccountInfo{padding-left:0px}
+#transfer-payment-confirmation-body .graybox span.middle, #transfer-payment-confirmation-body .graybox img.middle{POSITION: inherit !important;  }
+#IE8 #transfer-payment-confirmation-body .graybox td.span-200.padBot6{vertical-align:-5px;}
+/* Defect Fix DTSYS00114402 */
+.transferminamount {VERTICAL-ALIGN: top;}
+/* DTSYS00114407 - Wraps text for long Avl Bal/Credit values */
+/* DTSYS00146944 Start- Added display property to fix the wraping issue in IE7 */
+.FromAccDetailsTextWrap { display: inline-block; white-space:pre-wrap }
+/* DTSYS00146944 End */
+/*RQT906 Remove close link and icon overlay upper right corner -wxholle*/
+div.no-close-corner span,
+div.no-close-corner a
+{
+	display:none;
+}
+/* RQT906 End */
+.tab_content
+{
+    margin: 15px 15px 25px 20px;
+}
+.tab_content
+{
+    height: 28px;
+}
+.tab_container
+{
+    border: 1px solid #919191;
+    border-top: none;
+    /*overflow: hidden;*/
+    clear: both;
+    height: 100%;
+    background: #fff;
+    width: 698px;
+}
+.mesTab_container
+{
+    border-color: #999999;
+    border-width: 1px;
+    border-style: solid;
+}
+.tabHeaderDivider
+{
+    float: left;
+    height: 7px;
+    width: 700px;
+    background-color: #094f9e;
+    box-shadow: 1px 1px 2px #919191;
+    -moz-box-shadow: 1px 1px 2px #919191;
+    -webkit-box-shadow: 1px 1px 2px #919191;
+}
+ul.tabs
+{
+    margin: 0;
+    margin-top: 9px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+ul.tabs li
+{
+    float: left;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    line-height: 8px !important;
+    height: 28px !important;
+    -moz-border-radius: 4px; /* for rounded corners in Firefox */
+    -webkit-border-radius: 4px; /* for rounded corners in Safari and Chrome */
+    border-radius: 4px 4px 0px 0px;
+    border-left: none;
+    overflow: hidden;
+    background: #d3ecf7;
+    border-top-left-radius: 4px 4px;
+    border-top-right-radius: 4px 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    font-weight: bold;
+}
+ul.tabs li a
+{
+    text-decoration: none;
+    color: #0c2074;
+    display: block;
+    padding: 10px 10px 6px 10px !important;
+    font-weight: bold;
+}
+ul.tabs li:hover 
+{ 
+  COLOR: #2b85bb !important; 
+  display: block !important;
+  font-weight: bold !important;
+  background-color:#d3ecf7 !important; 
+}
+ul.tabs li a:hover 
+{ 
+  COLOR: #2b85bb !important; 
+  display: block !important;
+  font-weight: bold !important;
+  background-color:#d3ecf7 !important; 
+ 
+}
+/*DTSYS00179675- fix 08-Aug-2014 Start*/
+ul.tabs li.active
+{
+    height: 28px;
+    width: auto;
+    background: -moz-linear-gradient(top,  #81cbea 0%, #0950a0 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81cbea ), color-stop(100%,#0950a0)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #81cbea  0%,#0950a0 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #81cbea  0%,#0950a0 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #81cbea  0%,#0950a0 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  #81cbea  0%,#0950a0 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81cbea ', endColorstr='#0950a0') !important; /* IE6-9 */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVBhXDcTZCgFhAAbQ795OdrIvk8chiSQSSSSSSKLJg9j3fRvj4T7/uThITH+EJKtEfPIlYmOFiI4+RGT4JsKDFxHqP4lgTxToPgh/50742jfC27oSnuaFcDfOhKt+Ipw1kaN6JOyVA2Er7wlraUdYilvCXNgQpvyaMOZEhuyK0GeWhC69ILSpOaFJzvgHzrpCAwk84P8AAAAASUVORK5CYII=) !important;
+}
+ul.tabs li.active a
+{
+    font-weight: bold;
+    color: #ffffff !important;
+    font-size: 12px;
+    padding: 10px 10px 6px 10px !important;
+}
+ul.tabs li.active a:hover
+{
+    font-weight: bold;
+    color: #FFFFFF !important;
+    font-size: 12px;
+    padding: 10px 10px 6px 10px !important;
+    background-color:#0950a0 !important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVBhXDcTZCgFhAAbQ795OdrIvk8chiSQSSSSSSKLJg9j3fRvj4T7/uThITH+EJKtEfPIlYmOFiI4+RGT4JsKDFxHqP4lgTxToPgh/50742jfC27oSnuaFcDfOhKt+Ipw1kaN6JOyVA2Er7wlraUdYilvCXNgQpvyaMOZEhuyK0GeWhC69ILSpOaFJzvgHzrpCAwk84P8AAAAASUVORK5CYII=) !important;
+    
+}
+/*DTSYS00179675- fix 08-Aug-2014 End*/
+.span-148
+{
+    float:left;
+    width:148px;
+}
+.transactionTypeBackground
+{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color:#edf4f9;
+    border-bottom:#999999 1px solid;
+    border-top:#999999 1px solid;
+}
+.BotBorder999999
+{
+    border-bottom: solid 1px #999999;
+}
+.TopBorder999999
+{
+    border-top: solid 1px #999999;
+}
+.BorderTopBot999999
+{
+    border-bottom: solid 1px #999999;
+    border-top: solid 1px #999999;
+}
+.stretch-698
+{
+    width:698px;
+}
+#divBrokerageIneligibleText,#divBrokerageErrorM003Text
+{
+    /*min-height: 600px !important;*/
+    margin-bottom: 10px;
+}
+#spanSelectedAccNameForTitle
+{
+    vertical-align: top !important;
+}
+/* START - E-11374 Update US Bank Credit Card AutoPay Details */
+.EditAutoPayStatementBalCCD
+ {
+ 	width: 310px !important; 
+ 	float: left; 
+ 	margin-bottom: 5px; 
+ 	padding-top: 4px; 
+ 	padding-left: 3px;
+ }
+ .padTop3
+{
+    padding-top: 3px;
+}
+ .positionAbsolute
+{
+    position: absolute;
+}
+.AddAutoPayStatementBalCCD
+ {
+ 	padding: 0; 
+ 	vertical-align: baseline;
+ }
+/* END - E-11374 Update US Bank Credit Card AutoPay Details */
+.paymentButton{
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #d83b48;
+    -webkit-appearance: none;
+    outline-color: transparent
+}
+.paymentButton:hover{
+  background-color: #991027;
+}
+.makeOneTimePaymentBox{
+background:#fff2f1; border:2px #efcacf solid;padding:18px;border-radius:4px;
+}
+.hazardtriangleBox{
+height:60px;width:30px;float:left;padding-right:18px;
+}
+.hazardtriangleImg{
+height:22px;width:20px;
+}
+.makeOneTimePaymentFeedbackBold{
+font-size:18px; line-height:27px;color:#BE1324;font-weight:bold
+}
+.makeOneTimePaymentFeedback{
+font-size:18px; line-height:27PX;color:#BE1324;
+}
+/*MAP*/
+.ExternalAC90
+{
+    width:90%;
+}
+.ExternalAC60
+{
+    width:60%;
+}
+.ExternalAC50
+{
+    width:50%;
+}
+.ExternalACFloat
+{
+    float:left;
+}
+.ExternalACPadding
+{
+    padding-bottom:10%
+}
+.showHideBtn {
+ cursor: pointer !important;
+  background: None !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 12px !important;
+  position: relative;
+  float: right;
+  height: 20px !important;
+  width: 44px !important;
+  color: #007CBE !important;
+  padding: 0 0 0 7px !important;
+  margin: 0 !important;
+  line-height: 0;
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  font-weight: 400 !important;
+}
+.showHideBtn:focus {
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  text-decoration: none !important;
+}
+.showHideBtn:hover {
+  background: #fff !important;
+  text-decoration: none !important;
+}
+.btnHS
+{
+    top:-23px;
+    left:-5px
+}
+.btnHSE
+{
+    top:-23px;
+    left:-1px
+}
+.divOverFlow {
+  white-space: nowrap !important;    
+}
+.CMSOverFlow {
+ overflow: auto !important;  
+}
+.ExternalAC60 input{
+    width: 95%;
+}
+.RtnTxtbox{
+    width:28%;
+}

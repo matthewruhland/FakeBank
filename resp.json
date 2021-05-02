@@ -1,0 +1,112 @@
+{
+    "message": "success",
+    "data": [{
+        "accountType": "Savings",
+        "date": "07/16/2020",
+        "description": "Monthly Maintenance Fee Waived",
+        "deposit": 1,
+        "ammount": 9.99
+    }, {
+        "accountType": "Savings",
+        "date": "07/16/2020",
+        "description": "Monthly Maintenance Fee",
+        "deposit": 0,
+        "ammount": 9.99
+    }, {
+        "accountType": "Savings",
+        "date": "07/15/2020",
+        "description": "Web Authorized Pmt\nTarget Card Srvc",
+        "deposit": 0,
+        "ammount": 450.46
+    }, {
+        "accountType": "Savings",
+        "date": "07/15/2020",
+        "description": "Electronic Paystub Deposit\nWagie Job",
+        "deposit": 1,
+        "ammount": 2151.2
+    }, {
+        "accountType": "Savings",
+        "date": "07/10/2020",
+        "description": "Mobile Banking Payment To Credit Card\n1357",
+        "deposit": 0,
+        "ammount": 637.6
+    }, {
+        "accountType": "Savings",
+        "date": "06/29/2020",
+        "description": "Debit Purchase -visa 06/17 card 4321\nVenmo* Visa Direct Ny",
+        "deposit": 0,
+        "ammount": 80
+    }, {
+        "accountType": "Checking",
+        "date": "07/16/2020",
+        "description": "Monthly Maintenance Fee Waived",
+        "deposit": 1,
+        "ammount": 14.95
+    }, {
+        "accountType": "Checking",
+        "date": "07/16/2020",
+        "description": "Monthly Maintenance Fee",
+        "deposit": 0,
+        "ammount": 14.95
+    }, {
+        "accountType": "Checking",
+        "date": "07/15/2020",
+        "description": "Web Authorized Pmt Web Authorized Pmt\nTarget Card Srvc",
+        "deposit": 0,
+        "ammount": 450.46
+    }, {
+        "accountType": "Checking",
+        "date": "07/15/2020",
+        "description": "Electronic Paystub Deposit Electronic Paystub Deposit\nWagie Job",
+        "deposit": 1,
+        "ammount": 2151.2
+    }, {
+        "accountType": "Checking",
+        "date": "07/10/2020",
+        "description": "Mobile Banking Payment To Credit Card 1357",
+        "deposit": 0,
+        "ammount": 637.6
+    }, {
+        "accountType": "Checking",
+        "date": "07/09/2020",
+        "description": "Electronic Withdrawal Electric Bill",
+        "deposit": 0,
+        "ammount": 11.59
+    }, {
+        "accountType": "Checking",
+        "date": "07/06/2020",
+        "description": "Cash Rewards Redemption\n1357",
+        "deposit": 1,
+        "ammount": 33.01
+    }, {
+        "accountType": "Checking",
+        "date": "07/02/2020",
+        "description": "Web Authorized Pmt\nRent Payment",
+        "deposit": 0,
+        "ammount": 1695.63
+    }, {
+        "accountType": "Checking",
+        "date": "07/01/2020",
+        "description": "Mobile Banking Payment To Credit Card 1357",
+        "deposit": 0,
+        "ammount": 663.09
+    }, {
+        "accountType": "Checking",
+        "date": "06/30/2020",
+        "description": "Electronic Paystub Deposit\nWagie Job",
+        "deposit": 1,
+        "ammount": 2146.5
+    }, {
+        "accountType": "Checking",
+        "date": "06/30/2020",
+        "description": "Electronic Paystub Deposit\nWagie Job",
+        "deposit": 1,
+        "ammount": 1060.25
+    }, {
+        "accountType": "Checking",
+        "date": "06/29/2020",
+        "description": "Debit Purchase -visa 06/17 card 4321\nVenmo* Visa Direct Ny",
+        "deposit": 0,
+        "ammount": 80
+    }]
+}

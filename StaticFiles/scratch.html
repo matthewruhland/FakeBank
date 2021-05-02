@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="utilities.js"></script>
+    <title>Convert JSON Data to HTML Table</title>
+    <style>
+        th,
+        td,
+        p,
+        input {
+            font: 14px Verdana;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <select margin-top="10px" class="firstdropbtn" id="TransferFrom" name="TransferFrom" onmousedown="this.value='';">
+        <option value='1'>Savings</option>
+        <option value='2'>Checking</option>
+    </select>
+    <a class="ui-selectmenu-status">
+        From Account</a>
+    <select class="dropbtn" id="TransferTo" name="TransferTo" onmousedown="this.value='';">
+        <option value='1'>Checking</option>
+        <option value='2'>Savings</option>
+    </select>
+    <a class="ui-selectmenu-status">
+        To Account</a>
+    <div>
+        <!-- Added ID for div DTSYS00167492 defect fix -->
+        <div id="div_toAccountDetails">
+        </div>
+        <div id="div_TaxYearDetails" style="display:
+                none;">
+        </div>
+        <div id="divTaxYear" style="display:none">
+            <div class="vs10
+                    span-90" style="line-height:
+                    2em;font-weight:
+                    bold;">
+                Tax
+                Year:
+            </div>
+            <!-- Added ID for div DTSYS00167492 defect fix -->
+            <div id="brdr_ddlTaxYear" class="vs10
+                    height-25">
+                <select id="ddlTaxYear" class="stretch-110">
+                </select>
+                <label for="myalue" style="line-height:
+                        2em;"></label>
+            </div>
+            <div id="div1">
+            </div>
+        </div>
+        <div id="divTransferAmount" class="vs10
+                span-90">
+            <!-- PCR 943 removed tstMinVal attribute -->
+            <input id="txtTransferAmount" name="txtTransferAmount" offsetparent="false" maxlength="12"
+                tstmaxval="99999999.99" regxexpr="money" type="text" class="minmax
+                    required
+                    matchregx
+                    amount
+                    stretch-74" value="$">
+        </div>
+        <div id="divTransferDate" class="vs10
+                height-25">
+            <div id="TransferDateDiv">
+                <span>
+                    <!-- DTSYS00162758 - Changes are done to set the minmax attribute so that if the date is entered less than current date validation is displayed -->
+                    <input type="text" id="TransferDate" regxexpr="mm/dd/yyyy" class="required
+                            TPCentralminmax
+                            matchregx
+                            TPCentralmatchregx
+                            TPCentralEditable
+                            minmax
+                            stretch-74
+                            hasDatepicker" disableweekends="true" value="mm/dd/yyyy" dateminval="Mon
+                            Jul
+                            20
+                            2020"><span class="ui-datepicker-trigger
+                            iconcalendarpicker" src="iconcalendarpicker" alt="..." title="...">&nbsp;</span>
+                    <span class="iconcalendarpickerDisabled"></span></span>
+            </div>
+        </div>
+        <div class="vs15
+                divMMWidgetTransferContinue">
+            <button id="TransferButtonContinue" onclick="transferMoney()">Continue</button>
+        </div>
+        <!-- <script type="text/javascript">
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,
+                    ",");
+            }
+
+            function verifySelection(value) {
+                var x = document.getElementById("TransferTo")
+                    .selectedIndex;
+                var y = document.getElementById("TransferFrom")
+                    .selectedIndex;
+                if (x !== y) {
+                    alert("Cannot transfer to the same account");
+                    return false;
+                }
+                return true;
+            }
+            async function GetAccountDataFromJSON(TransferAmount) {
+                // api url 
+                const api_url =
+                    "http://localhost:5000/api/amount/";
+                var checkingIndex = 0;
+                var savingsIndex = 1;
+                var DbCheckingAmount = await new Promise(
+                    function (resolve) {
+                        setTimeout(function () {
+                            resolve(fetchAccountData(
+                                api_url,
+                                checkingIndex
+                            ))
+                        }, 500)
+                    });
+                var DbSavingsAmount = await new Promise(
+                    function (resolve) {
+                        setTimeout(function () {
+                            resolve(fetchAccountData(
+                                api_url,
+                                savingsIndex
+                            ))
+                        }, 500)
+                    });
+                SaveAccountData(DbCheckingAmount,
+                    DbSavingsAmount, TransferAmount);
+
+            }
+
+            function fetchAccountData(api_url, accountIndex) {
+                var data;
+                var amount = fetch(api_url)
+                    .then(function (resp) {
+                        return resp.json();
+                    })
+                    .then(function (data) {
+                        return data.data[accountIndex].amount;
+                    });
+                return amount;
+            }
+
+            function SaveAccountData(currentChecking,
+                currentSavings, transferAmount) {
+                const api_url =
+                    "http://localhost:5000/api/setAccount/";
+
+                var fromChecking;
+                var newSavings;
+                var newChecking;
+                var checkingDeposit;
+                var savingsDeposit;
+
+                var FromAccount = document.getElementById(
+                    "TransferFrom").selectedIndex;
+                if (FromAccount == 1) {
+                    fromChecking = 1;
+                    checkingDeposit = 0;
+                    savingsDeposit = 1;
+                } else {
+                    fromChecking = 0;
+                    checkingDeposit = 1;
+                    savingsDeposit = 0;
+                }
+
+                console.log(transferAmount, fromChecking);
+                if (fromChecking) {
+                    var x = currentChecking - transferAmount;
+                    var s = currentSavings + transferAmount;
+                    newChecking = parseFloat(x);
+                    newSavings = parseFloat(s);
+                } else {
+                    var x = currentChecking + transferAmount;
+                    var s = currentSavings - transferAmount;
+                    newChecking = parseFloat(x);
+                    newSavings = parseFloat(s);
+                }
+                if (newChecking > 0)
+                    if (newSavings > 0) {
+                        postAccount("Checking", newChecking, checkingDeposit, transferAmount);
+                        postAccount("Savings", newSavings, savingsDeposit, transferAmount);
+                    }
+                else {
+                    alert("Must be enough money in savings!");
+                } else
+                    alert("Must be enough money in checking!");
+
+                var FormattedChecking = numberWithCommas(
+                    newChecking);
+                var FormattedSavings = numberWithCommas(newSavings);
+                document.getElementById("CheckingAmount")
+                    .innerHTML = `$${FormattedChecking.toFixed(2)}`;
+                document.getElementById("SavingsAmount")
+                    .innerHTML = `$${FormattedSavings.toFixed(2)}`;
+            }
+
+            function postAccount(account, newAmount, deposit, transferAmount) {
+                const api_url =
+                    "http://localhost:5000/api/setAccount/";
+                fetch(api_url, {
+                        method: 'POST',
+                        headers: {
+                            "Content-type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            "accountType": account,
+                            "amount": newAmount,
+                            "transferAmount": transferAmount,
+                            "deposit": deposit
+                        })
+                    })
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        console.log(
+                            'Request succeeded with JSON response',
+                            data);
+                    })
+                    .catch(function (error) {
+                        console.log('Request failed', error);
+                    });
+            }
+
+            function transferMoney() {
+                var amount = document.getElementById(
+                    "txtTransferAmount").value;
+                var TransferAmount = parseFloat(amount.replace(
+                    /[^0-9.]/g, ''));
+                if (verifySelection()) {
+                    GetAccountDataFromJSON(TransferAmount);
+                }
+            }
+        </script> -->
+</body>
+
+</html>

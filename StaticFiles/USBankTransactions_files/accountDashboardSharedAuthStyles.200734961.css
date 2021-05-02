@@ -1,0 +1,4829 @@
+/* Original Href-../../../../content/Shared/Styles/SharedAuthStyles/Omni/usb-module__modal.css */
+/*
+    Defining Global level Modal CSS
+    Mobile first approach: CSS written without media query will apply to mobile. 
+*/
+/*
+    This file is auto-generated.
+    Do not directly edit this file!
+    Any changes made directly here will be lost.
+    Typography style from:
+    http://usb-ux.com/guide/docs/omni/ays/global-styles-ays/ays-dashboard-typography/
+*/
+.usb-module__modal .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: auto;
+  outline: 0; }
+.usb-module__modal .modal.fade .modal-dialog, .usb-module__modal .modal.in .modal-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+.usb-module__modal .modal-content {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 1;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0 solid #999;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 101%;
+  overflow-y: auto; }
+  @media (min-width: 767px) {
+    .usb-module__modal .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-content {
+      opacity: 0.9;
+      height: auto; } }
+.usb-module__modal .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+.usb-module__modal .modal-dialog {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0; }
+  @media (min-width: 767px) {
+    .usb-module__modal .modal-dialog {
+      width: 55%;
+      height: auto;
+      margin: 30px auto; } }
+  @media (min-width: 992px) {
+    .usb-module__modal .modal-dialog {
+      width: 45%;
+      height: auto;
+      margin: 30px auto; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-dialog {
+      width: 35%;
+      height: auto;
+      margin: 30px auto; } }
+.usb-module__modal .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-backdrop {
+      background-color: #000000;
+      opacity: 0.65; } }
+.usb-module__modal .modal-header {
+  /* Extend the close icon from usb common */ }
+  .usb-module__modal .modal-header .modal-header-title {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding-left: 58px;
+    padding-right: 58px; }
+    @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+      .usb-module__modal .modal-header .modal-header-title {
+        top: 40px;
+        padding-left: 78px;
+        padding-right: 78px; } }
+  .usb-module__modal .modal-header .modal-header-close {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 23px;
+    right: 20px;
+    z-index: 12; }
+    @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+      .usb-module__modal .modal-header .modal-header-close {
+        right: 40px;
+        top: 40px; } }
+  .usb-module__modal .modal-header .usb-icons-close2 {
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 23px;
+    z-index: 12; }
+.usb-module__modal .modal-hr1px--dark-gray {
+  height: 1px;
+  background-color: #333333;
+  margin-top: 90px; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-hr1px--dark-gray {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 85px; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-hr1px--dark-gray {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 79px; } }
+.usb-module__modal .modal-body {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0 20px; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-body {
+      margin: 40px 0 0;
+      padding: 0 40px; } }
+.usb-module__modal .modal-footer {
+  text-align: left;
+  padding: 0 20px 20px; }
+  @media (min-width: 767px), (min-width: 992px) {
+    .usb-module__modal .modal-footer {
+      padding: 0 40px 20px; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-footer {
+      padding: 20px 40px; } }
+.usb-module__modal .modal-link {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0066b3;
+  text-decoration: underline; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-link {
+      display: inline; } }
+.usb-module__modal .usb-button--secondary {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .usb-button--secondary {
+      margin-right: 15px; } }
+.usb-module__modal .modal__banker-logout {
+  height: auto;
+  line-height: 17px; }
+.usb-module__modal .modal-margin-between-btn {
+  margin-bottom: 16px; }
+.usb-module__modal .modal-content-margin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-content-margin {
+      margin-bottom: 0; } }
+@media (min-width: 767px) {
+  .usb-module__modal .modal-sm {
+    width: 300px; }
+ }
+@media (min-width: 1200px) {
+  .usb-module__modal .modal-lg {
+    width: 900px; }
+ }
+.usb-icons-close3:before {
+  content: "";
+  background: url("/USB/content/Shared/Styles/Images/Shared/CLOSE%20ICON.svg") no-repeat;
+  height: 23px;
+  width: 23px;
+  background-size: 23px;
+  display: inline-block;
+}
+.usb-icons-close3 {
+    background:none !important;
+    top: 40px !important;
+    right: 40px !important;
+}
+.modal-hr1px-display{
+    display:block !important;
+}
+.modal-paragraph{
+    font-size:12px !important;
+    line-height: 18px !important;
+}
+.modal-headerdisplay{
+    margin-left: 0px !important;
+    margin-right:0px !important;
+    border:none !important;
+    padding:0px !important;
+    min-height:0px !important;
+}
+.modal-footerdisplay{
+    padding: 20px 40px !important;
+}
+ .thirdPartySpeedBump .modal-content{
+    opacity:0.9 !important;
+    max-height:none !important;
+}
+/*# sourceMappingURL=usb-module__modal.css.map */
+/* END of Href-../../../../content/Shared/Styles/SharedAuthStyles/Omni/usb-module__modal.css*/
+/* Original Href-../../../../content/Shared/Styles/SharedAuthStyles/Omni/common.css */
+/* UsBank Header override for mobile full site*/
+.menuLinks span {
+  vertical-align: baseline; }
+/* USBank Header for Mobile; prevent elements from scrolling behind subheaders */
+.usb__mobilenav-container {
+  position: fixed !important; }
+/* ========== BEGIN: Zelle Typography ========== */
+.zelle-header {
+  color: #59595b; }
+  @media (max-device-width: 1200px) {
+    .zelle-header {
+      font-size: 20px;
+      margin: 3px auto 0 !important;
+      line-height: 22px;
+      font-weight: 300; } }
+  @media (min-device-width: 1200px) {
+    .zelle-header {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 22px; } }
+.ui-mobile .zelle-header {
+  color: #ffffff; }
+@media (max-device-width: 1200px) {
+  .zelle-title {
+    font-size: 24px;
+    line-height: 24px;
+    color: #666666;
+    padding: 10px 0;
+    background: #FFFFFF;
+    z-index: 1; } }
+@media (min-device-width: 1200px) {
+  .zelle-title {
+    font-size: 34px;
+    line-height: 34px;
+    color: #59595b;
+    margin-bottom: 31px; } }
+.zelle-cancel,
+.zelle-logout {
+  position: absolute;
+  font-size: 14px;
+  top: 40px;
+  font-weight: 300; }
+.zelle-cancel {
+  right: 10px; }
+.zelle-logout {
+  right: -60px; }
+.zelle-header-line {
+  margin: 0;
+  background: rgba(7, 64, 128, 0.25);
+  border-top: 1px solid rgba(7, 64, 128, 0.25); }
+.zelle-btn--deactive {
+  background-color: #a1a1a1;
+  border-radius: 0;
+  cursor: default !important;
+  height: 44px;
+  width: 280px;
+  font-size: 21px;
+  color: #fff; }
+.zelle-btn--active {
+  background-color: #074080;
+  border-radius: 0;
+  width: 280px;
+  cursor: pointer;
+  height: 44px;
+  font-size: 21px;
+  color: #fff; }
+.zelle-btn--active-confirm {
+  background-color: #ffffff;
+  border-radius: 0;
+  cursor: pointer;
+  height: 44px;
+  font-size: 21px;
+  color: #074080;
+  border: 1px solid #074080; }
+  @media (min-device-width: 767px) {
+    .zelle-btn--active-confirm {
+      width: 280px !important; } }
+.zelle-btn--active-delete {
+  color: #0090c6;
+  border: 1px solid #0090c6; }
+.text-center {
+  text-align: center; }
+.header-hr {
+  border-bottom: 1px solid rgba(7, 64, 128, 0.25); }
+.account-header-xs {
+  text-align: center !important;
+  font-size: 34px;
+  padding: 18px 0 28px 0;
+  color: #59595b;
+  z-index: 10; }
+  @media (max-device-width: 767px) {
+    .account-header-xs {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 85px;
+      width: 100%;
+      padding: 14px 0;
+      font-size: 24px;
+      background-color: #FFF !important; } }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) {
+    .account-header-xs {
+      font-size: 34px;
+      background-color: #FFF !important;
+      padding: 18px 0; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) and (orientation: landscape) {
+  .enter-amount-xs {
+    display: none; } }
+.ews-continuebtn-xs {
+  cursor: default;
+  text-align: center;
+  font-size: 21px;
+  padding: 8px;
+  background-color: #a1a1a1;
+  color: #FFFFFF;
+  height: 44px;
+  width: 100%;
+  border-style: none;
+  font-weight: 200;
+  border-radius: 1px; }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) {
+    .ews-continuebtn-xs {
+      width: 280px;
+      margin: 0px auto;
+      float: none; } }
+.button-highlight {
+  background-color: #074080 !important; }
+.confirm-all-done {
+  background-color: #fff;
+  color: #1a4380;
+  border: solid 1px #1a4380;
+  font-size: 21px;
+  font-weight: 200; }
+.ews-position-container {
+  background-color: #FFFFFF;
+  position: fixed;
+  padding: 0 14px 14px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px; }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) {
+    .ews-position-container {
+      text-align: center;
+      bottom: 75px; } }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) and (orientation: landscape) {
+    .ews-position-container {
+      bottom: 18px; } }
+  @media (min-device-width: 1200px) {
+    .ews-position-container {
+      position: static; } }
+.zelle-overlay .ews-continuebtn-xs {
+  width: 100%;
+  margin: 0px auto; }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  .zelle-overlay .ews-position-container {
+    bottom: 0px;
+    position: absolute; } }
+.cursor-pointer {
+  cursor: pointer !important; }
+.review-initial {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+  background-size: 84px;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 40px;
+  color: #59595b;
+  line-height: 84px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%; }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) {
+    .review-initial {
+      width: 122px;
+      height: 122px;
+      line-height: 122px;
+      font-size: 55px; } }
+@media (max-device-width: 767px) {
+  .ews-review-token .review-initial {
+    margin-top: 100px; } }
+.token-account-content-xs {
+  margin: 110px 0;
+  font-size: 24px !important;
+  line-height: 30px;
+  color: #59595b;
+  text-align: center; }
+.ews-sendmoney-delivery .token-account-content-xs {
+  margin: 110px 15px; }
+.ews-eligible-text-head {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  float: none;
+  padding: 0 15px;
+  margin: 45% auto 20px;
+  max-width: 375px; }
+.ews-eligible-text {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 24px 15px 0;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 375px; }
+@media (max-device-width: 767px) {
+  .ews-gradetop {
+    /*background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.01) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.01) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.01) 100%);
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 999;
+        pointer-events: none;
+        top: 138px;
+        left: 0;
+        right: 0;*/
+    display: none; }
+  .ews-gradebottom {
+    /*background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 1) 100%);
+        position: fixed;
+        width: 100%;
+        height: 25px;
+        z-index: 9;
+        pointer-events: none;
+        bottom: 58px;
+        left: 0;
+        right: 0; */
+    display: none; } }
+/* ========== END: Zelle Typography ========== */
+/* ========== Begin: Error message ========== */
+/* ToDo: Replace this error message with the relevant name */
+.zelle-error-message {
+  margin: 20px 0;
+  padding: 20px 0;
+  background: #2A3942;
+  border-radius: 2px; }
+  .zelle-error-message .error-icon {
+    background: url(/USB/content/Shared/Styles/Images/Shared/error.svg) no-repeat;
+    margin: 0 auto; }
+    @media (max-device-width: 767px) {
+      .zelle-error-message .error-icon {
+        background-size: 34px;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 20px; } }
+    @media (min-device-width: 767px) {
+      .zelle-error-message .error-icon {
+        background-size: 24px;
+        width: 24px;
+        height: 24px;
+        margin-bottom: 20px; } }
+  @media (max-device-width: 767px) {
+    .zelle-error-message .message {
+      font-size: 17px;
+      line-height: 21px;
+      color: #FFF; } }
+  @media (min-device-width: 767px) {
+    .zelle-error-message .message {
+      font-size: 21px;
+      line-height: 30px;
+      color: #FFF; } }
+/* ========== End: Error message ========== */
+.processing-icon-location {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100000; }
+.processing-icon {
+  position: relative;
+  left: -50%;
+  top: -50%;
+  background: url(/USB/content/Shared/Styles/Images/Shared/ajax-loader.200734961.gif) no-repeat;
+  width: 25px;
+  height: 25px; }
+.zelle {
+  /* ========== BEGIN: Select Styles ========== */ }
+  .zelle input[type=number]::-webkit-inner-spin-button,
+  .zelle input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .zelle input[type="text"], .zelle input[type="number"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 2px;
+    background: #f1f3f3;
+    font-size: 14px;
+    line-height: 20px;
+    color: #919191;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (max-device-width: 767px) {
+      .zelle input[type="text"], .zelle input[type="number"] {
+        height: 30px; } }
+    @media (min-device-width: 767px) {
+      .zelle input[type="text"], .zelle input[type="number"] {
+        height: 36px; } }
+  .zelle input[type="text"]:focus,
+  .zelle input[type="number"]:focus {
+    color: #333333;
+    text-transform: none;
+    border: none; }
+  .zelle select {
+    height: 44px;
+    padding-left: 10px;
+    padding-right: 15px;
+    color: #2B85BB;
+    border: solid 1px #D2D2D2;
+    border-radius: 2px;
+    background: url(/USB/content/Shared/Styles/Images/Shared/down-arrow.svg) no-repeat;
+    background-position: 95%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 16px 16px; }
+  .zelle select::-ms-expand {
+    display: none; }
+  .zelle select:active {
+    color: #2B85BB; }
+  .zelle select:hover {
+    color: #2B85BB; }
+/* ========== END: Select Styles ========== */
+/* ========== BEGIN: Overlay Styles ========== */
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 0 !important;
+  overflow-y: hidden !important; }
+.modal-dialog {
+  overflow: visible !important; }
+.modal-content {
+  opacity: 1 !important;
+  overflow: visible !important; }
+@media (min-device-width: 1200px) {
+  .ui-mobile .modal-content {
+    position: relative;
+    transform: none;
+    -webkit-transform: none; } }
+.modal-footer {
+  padding: 48px 40px !important; }
+@media (max-device-width: 767px) {
+  .modal-dialog {
+    top: 10% !important;
+    left: 15% !important;
+    width: 485px !important;
+    height: 510px !important; } }
+@media (max-device-width: 992px) {
+  .modal-dialog {
+    width: 100% !important;
+    max-height: 100% !important;
+    height: 100% !important;
+    min-width: 100%;
+    left: 0 !important;
+    top: 0 !important; }
+  .modal-content {
+    width: 100% !important;
+    max-height: 100% !important;
+    height: 100% !important;
+    min-width: 100%; }
+  .add-icon {
+    margin-left: 0 !important; }
+  .recipient-save {
+    margin-right: 0 !important; }
+  .footer {
+    padding-left: 10px !important; } }
+.zelle-overlay {
+  color: #000000; }
+  @media (min-device-width: 767px) {
+    .zelle-overlay .modal-content {
+      background: #ffffff;
+      opacity: 0.9;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      height: 510px;
+      max-width: 600px;
+      z-index: 1035;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      overflow: hidden; } }
+  @media (max-device-width: 767px) {
+    .zelle-overlay .modal-content {
+      height: 100%; } }
+  @media (min-device-width: 767px) and (max-device-width: 1200px) {
+    .zelle-overlay .modal-content {
+      width: 485px; } }
+  .zelle-overlay .modal-header {
+    text-align: center;
+    padding-top: 25px;
+    border: 0; }
+  .zelle-overlay .modal-header-title {
+    position: relative !important;
+    top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .zelle-overlay .modal-header-close {
+    position: absolute;
+    right: 20px;
+    background-image: none;
+    color: rgba(0, 0, 0, 0.7); }
+  .zelle-overlay .header-border {
+    margin: 0 10px;
+    border-bottom: 1px solid #333333; }
+  .zelle-overlay .modal-body {
+    padding-top: 40px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto; }
+    @media (min-device-width: 767px) and (max-device-width: 1200px) {
+      .zelle-overlay .modal-body {
+        padding-top: 0px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto; } }
+/* ========== END: Overlay Styles ========== 
+/* ========== BEGIN: EWS Step Up Styles ========== */
+@media (min-device-width: 1200px) {
+  .ews-stepup .usb-module__idshield .modal.fade .modal-dialog {
+    top: 0px !important; } }
+.ews-stepup .usb-module__idshield .modal-body .stepup__anchor {
+  color: #0090C6; }
+@media (min-device-width: 1200px) {
+  .ews-stepup .modal-dialog {
+    top: 0px !important;
+    bottom: 0 !important;
+    width: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 587px !important;
+    min-width: inherit;
+    min-height: inherit;
+    vertical-align: middle;
+    position: relative !important;
+    padding-top: 40% !important; } }
+@media (min-device-width: 767px) and (max-device-width: 1024px) {
+  .ews-stepup .modal-dialog {
+    top: 200px !important;
+    bottom: initial !important;
+    width: auto !important;
+    left: 200px !important;
+    right: 200px !important;
+    height: 587px !important;
+    min-width: inherit;
+    min-height: inherit; } }
+@media (min-device-width: 767px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .ews-stepup .modal-dialog {
+    top: 100px !important;
+    left: 320px !important;
+    right: 320px !important; } }
+.ews-stepup .modal-content {
+  background-color: #ffffff !important; }
+  @media (max-device-width: 767px) {
+    .ews-stepup .modal-content {
+      position: fixed;
+      bottom: 0;
+      height: 365px !important;
+      border: none !important;
+      box-shadow: none !important; } }
+.ews-stepup .usb-module__idshield .modal-header.usb-content-paragraph--large {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+@media (max-device-width: 767px) {
+  .ews-stepup .usb-module__idshield .modal-header .usb-icons-close2 {
+    position: fixed; } }
+.ews-stepup .usb-module__idshield .modal-header .modal-header-title {
+  margin: 240px auto 24px;
+  font-size: 24px;
+  color: #666666; }
+  @media (min-device-width: 767px) and (max-device-width: 1024px) {
+    .ews-stepup .usb-module__idshield .modal-header .modal-header-title {
+      margin: 200px auto 24px; } }
+  @media (max-device-width: 767px) {
+    .ews-stepup .usb-module__idshield .modal-header .modal-header-title {
+      margin-top: 0; } }
+.ews-stepup .usb-module__idshield .modal-hr1px--dark-gray {
+  display: none; }
+.ews-stepup .usb-heading2.stepup__centre.usb__hide-when-lg {
+  display: none; }
+.ews-stepup .modal-body {
+  padding: 0px 14px;
+  margin: 0px;
+  position: static;
+  text-align: center; }
+  .ews-stepup .modal-body .stepup__answertext {
+    margin: 24px auto 14px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #666666;
+    padding: 5px 15px;
+    height: 28px; }
+    @media (min-device-width: 1200px) {
+      .ews-stepup .modal-body .stepup__answertext {
+        width: 45% !important; } }
+  .ews-stepup .modal-body .stepup__anchor.stepup__centre {
+    margin: 0px;
+    padding: 0px; }
+    .ews-stepup .modal-body .stepup__anchor.stepup__centre .usb-links {
+      margin: 0px;
+      padding: 0px;
+      color: #0090C6;
+      font-weight: 300;
+      text-decoration: underline; }
+  .ews-stepup .modal-body .usb-content-paragraph {
+    padding: 0px; }
+  .ews-stepup .modal-body .stepup__questiontext {
+    font-style: normal;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #666666; }
+.ews-stepup .stepup__centre .usb-button--primary3 {
+  cursor: pointer;
+  font-size: 21px;
+  background-color: #074080;
+  height: 44px;
+  font-weight: 200;
+  border-radius: 1px; }
+  @media (min-device-width: 1200px) {
+    .ews-stepup .stepup__centre .usb-button--primary3 {
+      height: 44px !important;
+      width: 280px !important;
+      margin-bottom: 75px !important; } }
+  @media (max-device-width: 767px) {
+    .ews-stepup .stepup__centre .usb-button--primary3 {
+      position: fixed;
+      bottom: 14px;
+      left: 14px;
+      right: 14px;
+      width: initial;
+      cursor: pointer;
+      width: calc(100% - 28px); } }
+  @media (min-device-width: 767px) and (max-device-width: 1024px) {
+    .ews-stepup .stepup__centre .usb-button--primary3 {
+      position: absolute;
+      height: 52px;
+      bottom: 14px;
+      left: 14px;
+      right: 14px;
+      cursor: pointer;
+      width: 95%;
+      width: calc(100% - 28px);
+      margin: 0 auto !important; } }
+@media (min-device-width: 1024px) {
+  .ui-mobile .ews-stepup .modal-dialog {
+    left: 300px !important;
+    right: 300px !important;
+    top: 20% !important; } }
+@media (min-device-width: 1024) and (orientation: landscape) {
+  .ui-mobile .ews-stepup .modal-dialog {
+    left: 475px !important;
+    right: 475px !important; } }
+@media (min-device-width: 1024px) {
+  .ui-mobile .ews-stepup .modal-content {
+    height: 648px !important; } }
+/* ========== END: EWS Step Up Styles ========== */
+/* ========== BEGIN: Keypad ========== */
+@media (min-device-width: 767px) and (max-device-width: 1200px) {
+  .amount-keypad .zelle-keypad .keypad-block {
+    width: 196px;
+    height: 69px;
+    display: inline-block;
+    line-height: 69px;
+    font-size: 24px;
+    color: #1d427e; } }
+@media (max-device-width: 1024px) {
+  .zelle-keypad .keypad-block {
+    width: 33%;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 24px;
+    background-color: #FFF;
+    color: #666666; } }
+@media (max-device-width: 767px) {
+  .zelle-keypad .keypad-block {
+    width: 33%; } }
+.zelle-keypad .border-bottom {
+  border-bottom: 1px solid rgba(7, 64, 128, 0.25); }
+.zelle-keypad .border-right {
+  border-right: 1px solid rgba(7, 64, 128, 0.25); }
+@media (max-device-width: 767px) {
+  .zelle-overlay .zelle-keypad {
+    margin: 0 14px; } }
+@media (max-height: 540px) and (max-device-width: 767px) {
+  .zelle-overlay .zelle-keypad .keypad-block {
+    height: 30px;
+    line-height: 30px; } }
+/* ========== END: Keypad ========== */
+/* ========== BEGIN: Common styles for pages in mobile ========== */
+@media (max-device-width: 767px) {
+  .zelle div#usbwrapperOmni {
+    padding-top: 52px; }
+  .zelle.ews-sendmoney-add-recipient div#usbwrapperOmni {
+    padding-top: 0; }
+  .ews-sendmoney-recipient,
+  .ews-sendmoney-delivery,
+  .ews-sendmoney-amount,
+  .ews-sendmoney-review {
+    color: #000;
+    /*margin-top: 64px;*/ } }
+@media (min-device-width: 767px) and (max-device-width: 1200px) {
+  .ews-sendmoney-recipient,
+  .ews-sendmoney-delivery,
+  .ews-sendmoney-amount,
+  .zelle-ews-sendmoney-frequency,
+  .ews-sendmoney-review {
+    /*margin-top: 83px;*/
+    color: #000; } }
+.ews-col-center-inline-block {
+  float: none;
+  margin: 0 auto;
+  display: inline-block; }
+@media (max-device-width: 1024px) {
+  .ews-frequency-container .ews-col-center-inline-block {
+    padding: 0px; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .ews-stop-payments-head {
+    color: #0066b3;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0px;
+    padding: 22px 0 20px 18px;
+    width: 100%; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row {
+    height: auto !important;
+    min-width: initial;
+    max-height: initial;
+    width: 90%;
+    width: calc(100% - 18px);
+    margin: 0 0 0 18px;
+    padding: 18px 18px 18px 0; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row * {
+      font-size: 17px;
+      line-height: 20px;
+      color: #333333;
+      padding: 0;
+      margin: 0; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .ews-amount-field {
+    margin: 10px 0px 0px; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .ews-radio-field {
+    float: right; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row div {
+    float: right; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row div input[type=text] {
+      clear: both; }
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row .list-content {
+    float: left; } }
+@media (min-device-width: 767px) and (max-device-width: 1024px) {
+  .ews-frequency-container .ews-col-center-inline-block .stop-payment-content {
+    width: 100%; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .ews-stop-payments-head {
+      width: 33%;
+      padding-right: 15px;
+      text-align: right; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .payment-how {
+      float: left !important;
+      margin-top: 10px;
+      margin-left: calc(33% + 30px);
+      text-decoration: underline; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .payment-how a {
+      color: #0066b3 !important; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row {
+      margin-left: 0; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .row div {
+      float: left; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content .ews-stop-line-title {
+      width: 33%;
+      float: left;
+      text-align: right; }
+    .ews-frequency-container .ews-col-center-inline-block .stop-payment-content hr {
+      display: none; }
+  .ews-frequency-container .ews-input-field {
+    clear: both;
+    margin-left: 36% !important;
+    margin-left: calc(33% + 30px) !important;
+    margin-top: 10px !important; }
+  .ews-frequency-container .ews-radio-field {
+    margin-left: 30px !important; } }
+/* ========== END: Common styles for pages in mobile ========== */
+/*========== BEGIN: OTP VERIFICATION ===========*/
+.ews-token-takeover .modal-content {
+  width: 720px;
+  max-width: 900px; }
+@media (max-device-width: 1024px) {
+  .select-continuebtn-absolute-xs {
+    position: fixed;
+    bottom: 58px;
+    left: 0;
+    right: 0;
+    text-align: center; } }
+.ews-select-otp {
+  /*@media (max-device-width: 1024px) and (min-device-width: $usb-viewport-min-width--sm) {
+    margin-top: 100px;
+   }*/ }
+  @media (min-width: 544px) {
+    .ews-select-otp .hide-when-xs {
+      display: block; }
+    .ews-select-otp .show-when-xs {
+      display: none; } }
+  @media (max-height: 575px) and (max-device-width: 767px) {
+    .ews-select-otp .tokenDetails {
+      margin-bottom: 5px; } }
+  .ews-select-otp .modal-content {
+    width: 720px;
+    max-width: 900px; }
+  .ews-select-otp .modal-header {
+    border-bottom: none !important; }
+  .ews-select-otp .modal-open .modal-content .modal-header {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: none !important; }
+  @media (max-device-width: 992px) {
+    .ews-select-otp {
+      color: #58595b;
+      margin-top: 64px;
+      /*.select-continuebtn-fixed-xs {
+            position: absolute;
+            bottom: 0 !important;
+            width: 100%;
+        }*/ } }
+  @media (max-device-width: 992px) and (max-device-width: 767px) {
+    .ews-select-otp {
+      margin-top: 64px; } }
+  @media (max-device-width: 992px) and (min-device-width: 767px) {
+    .ews-select-otp {
+      margin-top: 100px; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .tokenDetails {
+        text-align: center; }
+      .ews-select-otp .hide-when-xs {
+        display: none; }
+      .ews-select-otp .show-when-xs {
+        display: block; } }
+    @media (max-device-width: 992px) and (max-device-width: 767px) {
+      .ews-select-otp .show-when-xs {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .title {
+        padding: 0 10px 10px 0;
+        /*border-bottom: 1px solid black;*/ }
+      .ews-select-otp .authMessage {
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 30px; } }
+    @media (max-device-width: 992px) and (max-device-width: 627px) and (min-device-width: 375px) {
+      .ews-select-otp .authMessage {
+        margin-top: 50px !important; } }
+    @media (max-device-width: 992px) and (max-device-width: 736px) and (min-device-width: 414px) {
+      .ews-select-otp .authMessage {
+        margin-top: 60px !important; } }
+  @media (max-device-width: 992px) and (max-device-width: 627px) and (min-device-width: 375px) {
+    .ews-select-otp .topHead {
+      margin-top: 60px !important; } }
+  @media (max-device-width: 992px) and (max-device-width: 736px) and (min-device-width: 414px) {
+    .ews-select-otp .topHead {
+      margin-top: 70px !important; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .subHeading {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 22px;
+        color: #58595b; } }
+    @media (max-device-width: 992px) and (max-device-width: 767px) {
+      .ews-select-otp .subHeading {
+        margin-top: 30px; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .footer input[type=button] {
+        background: #BBB;
+        margin-left: -25px;
+        border: 1px solid #999;
+        width: 80%;
+        position: fixed;
+        bottom: 10px;
+        color: #58595b; }
+      .ews-select-otp .codeStyle {
+        margin-top: 7px;
+        text-align: center;
+        letter-spacing: 3pt;
+        font-size: 18px;
+        color: #58595b; } }
+    @media (max-device-width: 992px) and (max-device-width: 767px) {
+      .ews-select-otp .codeStyle {
+        margin-top: 15px; } }
+    @media (max-device-width: 992px) and (max-device-width: 736px) and (min-device-width: 414px) {
+      .ews-select-otp .codeStyle {
+        margin-top: 60px !important; } }
+    @media (max-device-width: 992px) and (max-device-width: 1024px) and (min-device-width: 767px) {
+      .ews-select-otp .codeStyle {
+        margin-top: 50px; } }
+  @media (max-device-width: 992px) and (max-device-width: 992px) and (min-device-width: 767px) {
+    .ews-select-otp div.container {
+      margin-left: 175px; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .title > div:first-child {
+        font-weight: bold;
+        font-size: 16px; }
+      .ews-select-otp .userName {
+        display: inline-block; }
+      .ews-select-otp .subtitle {
+        margin-bottom: 10px; }
+      .ews-select-otp .listItem :first-child {
+        padding: 20px; }
+      .ews-select-otp .listItem input[type=radio] {
+        margin-top: 25px; }
+      .ews-select-otp hr {
+        width: 90%;
+        border-top: 1px solid #CCC;
+        margin-top: 0;
+        margin-bottom: 0; }
+      .ews-select-otp .codeBox-xs {
+        font-size: 20px;
+        text-align: center;
+        border: 0;
+        outline: 0;
+        border-left: transparent;
+        border-right: transparent;
+        border-top: transparent;
+        letter-spacing: 3pt;
+        color: #58595b; } }
+    @media (max-device-width: 992px) and (max-device-width: 767px) {
+      .ews-select-otp .codeBox-xs {
+        margin-left: 40px; } }
+    @media (max-device-width: 992px) and (min-device-width: 767px) {
+      .ews-select-otp .codeBox-xs {
+        margin-left: 200px;
+        border-bottom: 1px solid #58595b !important; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .selectAccountbtns {
+        margin-top: 100px !important;
+        margin-left: 90px; }
+      .ews-select-otp .select-otp-continuebtn-xs {
+        border-style: none;
+        cursor: default;
+        text-align: center;
+        font-size: 21px;
+        height: 44px;
+        background-color: #a1a0a0;
+        color: #ffffff;
+        font-weight: 200; } }
+    @media (max-device-width: 992px) and (max-device-width: 767px) {
+      .ews-select-otp .select-otp-continuebtn-xs {
+        position: fixed;
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+        width: calc(100% - 28px);
+        margin: 0; } }
+    @media (max-device-width: 992px) and (max-device-width: 1024px) and (min-device-width: 767px) {
+      .ews-select-otp .select-otp-continuebtn-xs {
+        width: 280px;
+        margin: 0px auto;
+        float: none; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .head-center {
+        text-align: center !important;
+        font-size: 24px;
+        padding: 0; }
+      .ews-select-otp .errorStyle {
+        text-align: center;
+        color: #de162b; } }
+    @media (max-device-width: 992px) and (max-device-width: 736px) and (min-device-width: 414px) {
+      .ews-select-otp .errorStyle {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important; } }
+  @media (max-device-width: 992px) {
+      .ews-select-otp .error-container {
+        min-height: 45px !important; }
+      .ews-select-otp .errorStyle-color {
+        color: #de162b; }
+      .ews-select-otp .otp-min-height {
+        min-height: 20px; } }
+  @media (max-height: 575px) and (max-device-width: 767px) {
+    .ews-select-otp .authMessage {
+      margin-top: 10px;
+      font-size: 16px; }
+      .ews-select-otp .authMessage span {
+        margin-top: 15px;
+        font-size: 16px; }
+    .ews-select-otp .subHeading {
+      margin-top: 0;
+      font-size: 18px; } }
+  @media (min-device-width: 992px) {
+    .ews-select-otp .hide-otp-md {
+      display: none; }
+    .ews-select-otp .codeBox {
+      font-size: 20px;
+      width: 3% !important;
+      margin: 0 0 2% 1%;
+      text-align: center;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      border-left: transparent;
+      border-right: transparent;
+      border-top: transparent;
+      border-bottom: 1px solid black;
+      color: #58595b; }
+    .ews-select-otp .error-container {
+      height: 80px; }
+    .ews-select-otp .errorStyle {
+      text-align: center;
+      color: #de162b;
+      margin-top: 30px; }
+    .ews-select-otp .codeStyle {
+      margin-top: 20px;
+      margin-left: 150px;
+      color: #58595b; }
+    .ews-select-otp .codeBox-md {
+      margin-top: 55px;
+      margin-left: 160px;
+      width: 100px;
+      font-size: 18px;
+      text-align: center;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      border-left: transparent;
+      border-right: transparent;
+      border-top: transparent;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      letter-spacing: 4pt; }
+    .ews-select-otp .subHeading {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 13px;
+      color: #59595b; }
+    .ews-select-otp .subtext {
+      text-align: center;
+      font-size: 18px;
+      font-weight: lighter;
+      color: #59595b; }
+    .ews-select-otp .tokenDetails {
+      text-align: center; }
+    .ews-select-otp .header {
+      font-size: 16px;
+      color: #0000A0; }
+    .ews-select-otp .subheader {
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal; }
+    .ews-select-otp .authMessage {
+      text-align: center;
+      margin-top: 49px; }
+    .ews-select-otp .desktopBtn {
+      width: 57%; } }
+  .ews-select-otp .select-otp-continuebtn-fixed-md {
+    bottom: 0 !important;
+    width: 150%;
+    margin-left: 15px; }
+  .ews-select-otp .select-otp-cancelbtn-md {
+    text-align: center;
+    padding: 20px;
+    text-decoration: none; }
+    @media (max-device-width: 1024px) and (min-device-width: 767px) {
+      .ews-select-otp .select-otp-cancelbtn-md {
+        margin-left: 100px; } }
+    @media (max-device-width: 992px) {
+      .ews-select-otp .select-otp-cancelbtn-md {
+        color: #333333; } }
+  .ews-select-otp .select-otp-continuebtn-md {
+    border-style: none;
+    cursor: default;
+    text-align: center;
+    font-size: 25px;
+    background-color: #a1a0a0;
+    color: #ffffff;
+    margin-left: 205px;
+    height: 44px;
+    width: 280px; }
+  .ews-select-otp .button-highlight {
+    cursor: pointer;
+    background-color: #074080 !important; }
+  @media (min-device-width: 767px) {
+    .ews-select-otp .zelle-overlay .select-continuebtn-absolute-xs {
+      position: absolute;
+      bottom: 18px !important;
+      left: 18px;
+      right: 18px;
+      text-align: center; } }
+  @media (min-device-width: 767px) {
+    .ews-select-otp .zelle-overlay .select-continuebtn-absolute-xs .select-otp-continuebtn-xs {
+      width: 100%; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  .modal-dialog {
+    margin: 0px auto !important; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  .modal-content {
+    background: none !important; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  .zelle-overlay {
+    position: fixed;
+    top: 200px;
+    bottom: initial;
+    left: 200px;
+    right: 200px;
+    height: 587px !important;
+    background-color: #FFF;
+    overflow: auto; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) and (orientation: landscape) {
+  .zelle-overlay {
+    top: 100px !important;
+    left: 320px !important;
+    right: 320px !important; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  .zelle-overlay .modal-content {
+    background: #FFF !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    max-width: initial !important;
+    position: absolute !important;
+    height: initial !important;
+    max-height: initial !important;
+    min-height: initial !important;
+    width: initial !important;
+    overflow: hidden !important; } }
+.zelle-overlay .ews-position-container .footer-note {
+  margin: 10px 0; }
+@media (min-device-width: 1024px) {
+  .ui-mobile .zelle-overlay {
+    position: static; } }
+/* Key Pad Styles END*/
+.errorValidation {
+  color: red; }
+.ews-money__loader {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.6; }
+/*div.ews-money__showcontent {
+    div.usb_spinner {
+        top: 50%;
+        left: 42%;
+        display: inline-block;
+    }
+    div.usb_holder {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/Spinner-IB-2.200734961.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        border-radius: 4px;
+    }
+}*/
+.ews-money__hidecontent {
+  display: none; }
+/* spinner styles for mobile*/
+.send-money__loader {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (max-device-width: 767px) {
+    .send-money__loader {
+      background-color: initial; } }
+div.send-money__showcontent div.usb_spinner {
+  display: inline-block; }
+/*No Elgible Account Error Begin*/
+.customBackground {
+  /*background: url(/USB/content/Shared/Styles/SharedAuthStyles/Images/blueBackground.200734961.png) top center repeat-x !important; Below image converted to Base64*/
+  background: url(data:image/png;base64,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) top center repeat-x !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -101; }
+.logo_noAccount {
+  /*background-image: url('/USB/content/Shared/Styles/SharedAuthStyles/Images/usbank-desktop.200734961.png'); Below Image Converted to Base64 Image*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXUAAAAzCAYAAABoi5gNAAAaDUlEQVR42u2dB1hVR9rHzdf2280m2TTTXFTUrGhiQxEFxALYQJFijA3UiBUUAQHFYGWtgJWmomKJaBJN7GjcrJuYbEhTE5MYYoglVmwxMSY+7LyXM5dhmDln5pxzL6hnnuf/iNd7yj0+/Oa9//edd+p8V7d5uaXm5WUZ2Wm///77EKTBvQaseP3PDeLLRZQ6f2cKOqbvb7/91gcpCCkQqTd6rRf6sydSD0XdkQKQ/JH8FHVD6orURVFnJF9FnRT5EPJW5IV1+/btjpLqoKGODhZ9PU9C7dv5z88TffbDJ6wfiY5p9euvv7ZEaoH0ItILSM2RmiG5ITW9devW35CeR2qC1Bip0S+//OKK1BCpAVL9n3/+2QXpr0j1bt68+RzSs0jP/PTTT08jPXXjxo26SE9ev379CaTHr1279hjo6tWrj165cuUvZWVlj1y+fPlh0MWLFx+6cOHCn8+dO/cg6MyZM386derUH0EnT578/xMnTvwBdOzYsf8DFRcX/y/o4MGD/wMqLCz8b6zU1NT/olWnTp0HKFnDGpXDAnqFLmXmzkUgjkAa2vvlrDdEwTJ9wc5p6Jh+SME8uFOAJ+HuT8GdBrwo5KvB3gR5m6hq5+eB3jNgwUpJqLfmgJ0Fd9PBjqFOgh1DHYMdoI7BDlDHYOdBXQvsFtStYUFdJFJfkjcfwXc40rA+g7K3iYJl1qLdqeiYUKQQFbizoncMd170zgI8C/Is2JutToISPZ8371tH++6LVok++6iJG6LQMW0w2LWido2IXRbq1cCuN1q3oG4NC+oOgfqqhQi6ryCN6Ds4d7sE1KejY8KRwjTgHqQCd1b0jgEvCnlRaYHZ14HiTQJ2yMtAfWT8xlEI5G2R3Em4q4CdZ8WYEq0D1NWidbMsGAvq1rCgLgL1ZasWIdhGIY0MHprzlihY5mTsmYmOeQmpvwDcRX13NcCzIM+CvRnqYlC88/JA7+PZc+Fq0Wc/Km7TaATxdhJgZ3nsQjaMbLQOUCejdVkLRhLqFtitYUGd1pUV+RkIsqORRvWLyHtbFCxpmXtnoWNeRhogAXde5M6K3mUg7yh1U5HMeXjQt0Peq/eifNFnPzq+cAwCuIcE2OnkKdNfNztapy0Yo766BXVrWFAX0OWsNYsRXMcijQmJzN0hCpa5i/fNQccMQhpoBtwZgGdB3p8BeVrdDMjPRGlNBFUA7xOYsUb02Y+d/NpYqJiRALtW4lTEhhGuhJGxYCxf3RoW1M2O1LPXLkFAHX/nzp1xIcNW7hQFy7wl+3AppBrYpeAuCHg6kqdhb5YCBCVyLh7w7YCXgfq4xM3jcCmkINjV/HWWDaM7WhexYCxf3RoW1B0J9Zy1SxFEY5CiQyPzdomCZf7Sor9DGSSucZeI2rU8dzXAk5CnQS8qHpy7myytCaAK4L0D09eKPvvopMLxRK27FtjV/HXahpH11h1iwVhQt8Z9AfXvm3iWnw2OtOnKguV2XYieanvtdNdQXee9ml2wHIFzIorUJ4QOW7lbFCwLlu+fh46LxDXuAPdVGw9PTUjdlg6LmHq+tGIrJFNzC95LVLFk7HDnRO/VIP/pkdPhU+a8lQgaOHpNeue+S9Zj9R6YlZ08e/tk0Nbtn0ZQE4CMekqqR2bWO2PhunAPcC8DRuYvgr9/8vn3oRzYVwG8T1DGOtFnH5O8JZqoeVcFO8+GcUa0zrJgLKhbw2lQv5azrvyX9/4tJDVIAmTNOA/oXER0+Y3XtpX/9sOZctHx69Hjts8iCvmrOQUrECxjAewyUE9fsR/q24d9deLHsYEDs998ulnyRd57H200+ad2/gv+sXPfsXEScLfps6NnBgwevTbTrePsw3WbJZ8XvT983aYdZr0P8IfJAEf+9DcA+Nmzx8JtDd1Tj2gJzoWPf/2tT4fBcU+6JZ1Tuw+4BwC8Wq5ABuoTpm2JwbXuJNhbdErb9OyLKcVYz7ww9SNSTzef8m/QU82SPwR5BaYnSUTrhi0YM3x1C+rWEIY6QFZ0qNoZKHo2eh6YGGRAzhvwmbTgfjVvfRYCVBzSpLDhq/eIgiUj+8CCgs0fTleDOUudgjJ2EmDnwd0GeP+QZZsAzDLnVwN8l+DFG3DUTwuALXKerv2WbIRvD4NGrcmQvbcWvmn7Pvm8NIyVK+jUJ7NAEuq2One8MhUdnyFzL/VaTtuvN1rXY8GI+OoW1K1xz0EdLJabuw6Umz1gkuBCfeX6bATQeAB7+IhVe0WhMGTs2s2PNU64qQewELUzLBm7537ki7OD67VI+c4MmNNq2WXufsrasUkG6n0H5+Tpvf5zL04tYSWCZaAem7J1ArGIyWvQ6PwkmXt44m9Jx9/ec8yD461Xq4QxasGY6atbULfGXQV1mXswC+xX8zbk3LlzZzKAXQbqRkWB3Q73o1+eHeoooGPBNwDS4gG5tp1+VCjCNeHewLKhLSDw4UWPnzTt9YkY6mnpe4b9pVHCDRmg7yr60pPhrYu0D6hxX92CujXuGqhfSplb7shx5+r18h/cA6qvKF21IRdBHZKZCf1H5u9zFtRBca++vlABux3uAeHLCp1x7SPHTg3EHj5IFOpm6Y0dnw0nK3x0QN33g4++7/VE06QfRY970i3pq70HjndkLEiy160LWjCGfHUrWWqN+wLqsslQnGyVGZBArQb11RvzENSTIFp3NtSfcptyQSl9tJc/muWha2noOFt9Pvbvg50NdbBwyKoe8PtFj014dVssLFh6uvnUE6LHPNYk8UzRwa+9qbp1N0ELRtpXZzX4YiVLLahb456EOiQz9doo4MMD5EUGTBwqUE98aeTqImeCjYjWbXXtk6a9sUD0uEbtph+bMGXLXPDfIcEKrYDdvGZ9IHq8X+jS14jkbD9nQx08fLJkUxbqzbxnC1cqPdIo4fqUmdsHUHXrrMVI3CoYnq8umyzVUwFjQd0adx3UoXTRyLUB7GCv6DlegXoygF0P1J9pPvWSf9iy/dAMrGOv9Pdkk6cv+KR9pEB9QPf+y7eIAp1YyFRFop43QJyEOpzT2RMaWY8vA/Xn28/8lwzQk2a/9bJSt45XmVbpCaNSBUP76oaSpWoVMBbUrXFPQV3mGPDeeWWQ5KIknqp76ptWIqBP0QN178D0wydKzkGN+yjc6fGbb8/F1G/96g/CtgCaBPAq1FcmbMhq7DHjC1IAW1qRMeuXERUz5ErVEP+w5Zv1TAyyUAebyLt3+tvwDQEkel0G1G1gh6oasycNAPrUtLcHEYuRZKHewKxkqQV1a1iRuoaNAouSAPCwmtRQ691KqCcPiMrfLxOhnyi5GIc7PGKoQ2/2fe9+mSgDn1Xr30+i2guQPjtZIUPWt4dRYLdJdIGSEagD0HPyD8XR3xJCIvJWS0K9j6OgDhUxqXN3DCZWmdIrTGlfnZksNdIyQKusUbRW3YK6Ne5pT10E9KwqF7OhHjm+YCvu7sgCe4eeC4UtAmgtQEBdFuxhMxbuejUkMi9fZsWpAnX7ZCADdYjKed8UdEI9yGyoB76cPUtpH2AI6qwKGEdC3SprtMZ9Wf0iCnkAPPjtqitK8zet0gP1xbkHM9WgPnbyZuGoFXrFKFBngd0GdWgxEJuydT6UPLb1n3cQIGykUsYI1JUoPZQFdpnzOBLqsMJUEupqFTAW1K1hQV32PLIWjEx9Os+HNwJ1aNWrBnXoDWMU6rPT98yARUpQ+mi232wE6jzrpzZBHeyXlQXvBzsC6rK16mYuQHqyWVJj9PlGPdQgLgkEP//BZaKrRTRr1MoVpWCfOGrAuZ0JdRlfnYY6dHd0BMjvJ6jbWhK0SPn4XoH6cx7Jjz/UMD73oYYJ6LNV1YP148v/5BKXU8dlzKNGuQDnetAlrsj+d5fYRHgNTRx+Nckr232pCd3zH10mhTvrfuB5VFw3NlHz3p31DGtrQy+oYhEtT5QdzMVHOj11R0Hdt0/mLmeUExqEemhtt1+wfIIy0u92qNdrldLkoQbxZQB09GcJROiPNIzzB8HPCOglCtjKjEbttR7q6N5o2T8/krPAfl9BXSbaVuudDpOD2T47DDqJSkJdpqSRgDoNdN32S/8Rq9YZhZioz24y1ENqK9ShrDE7/1CQmYlSZ0MdfYaPbUBHkTrPU4dIXYnYi82EOkwSNhiZ8C3ADKjz/h3BfK4Zn98RUHfaMzQCdbXko1mTA1kZg3u9OyJa17v46B//+mYaL0pHGpE8e/tSGajv3v9FjN6uj39tmXLSJzBjByQwJevUjUK92uInSag7tE4dC3qr13T1i16oP9pk8uiHXSeXP+yaUKyVKAWgKWCLMgvqtWVoQR2AqfmeGoL6XeGp82rDAfYyQ09dOUAeLBq9oKc35yCgLtUmICZ5yzoC6lWidIB6t9Alwn1k0jL3zpKN0gGeUA0DXR1JOOtcfCQLddZqVul2A3pXlOqRd2D6Qt7iI2fUqeuFOkTpAPVHGsf314I6WA90tGqLYBVIA4BIq4blw9NQhwlCsTjclb+7K3+Pgp+RCjFM4bo8+0N5fzHx3kIZO0IE2Phzsa5ts2oqLZwy5fquVW0Smy8/F56J7ZsPep9yryU0vLlQrzi2EM6FPx/9DGWvpfYM4Zz2/2MjUGd507J+Ogl1vE2dlljfEOA1qG4R9eE5UJfu/eLmNetrXpSONFxm8wyI0mH1qOj7oayR42uHwipPRy8+okGut4eM3t4vIOj9ItNyF2yYZXnv9qL2LHXqilI9UK+I0ieXi5Y00vDDMFMAUFIBgNhEO+SoqFzLU8cwwzCvAFhsogKWMpZ3jK2hCg/cNrGQEIsyA+r4Pm0TFfv1korPXfnZ4TX6GgBNeN0GT+X9lRNhJWyZUK8AdLVvSyxPXeZa1DMsw/+HFcfZJijbMXWM9jInywSxBy478PGiA8oeeRE8TDS6oK603tXTpXF80pY1LKDLLDxSOjUOkIE6FZ2b0vtFBsYMmOvq9kjuvyoD9SbtZhyCLo3+oUuXyvx/wZZ2Eg29TO/9Igv1uk2TAmxRumvCfmGoK8DCACEAVlwtKq98r6ss1FlAJoCfowVbJeIvs0XWAl5zZZSNwVwpYoKp+hkVS4aGt3L9QhZoWfdqO48CTx7UlW8tJcr7orQSpXquxfo/tMOeBXVHlhNqQV00yoZujGZDndgkQ1c/dWjiBVvbQWIUfPQWvmkfyxwP1S5Qky4Ddei1wrI+4HXRcxiEejBD0n3ZjfZTh40yZPqpg4Ij8iYKVL64Su5+ZAe6mYuPTIa6u0hVhkykLlY9o4BbJboWqiDRKmkk7Ahq4ihifRvAiVXGZ+fca8VzZEGdnKAkn7PQtfAExLS2yFyCUevETKjLbGFH7zsKP8vcO20dKdvZJTh75yOsXfuOjYcVozJQh2g8O/+fk0goR4wvWCqzwlSBuq4Im4Q4KZkdlJTzGNn5CKDuM2TMumTZapjd+493kNgkw8WZ+5Q6CuqipXbCkToHxOTxNthVsz6qRNg5ahMEC+pwfVoAO9Ke4JV14vfyrCK1JDEP6op/XqZWeSPynNWuhc/P+0Zjfz8NdfCsawrqzrw2vRE1sUep1MbTZm9pB0v/ZY8HuANEZXq+UFDXtfMRBjhDQaJ7nSqRun2fUgN7lHq7tJr2ieym0wzrRcRPlypnNAp1Mz31moA6adVoLRwyJVGq3KstAUkkj8nkIp5k8GtGoU5448W852IY6pr5BA7UHdF/Rab6xZH7k/KsFxvUcwpWANCRYp0JdYiqd+w9OhY36IJ2us6cUADievYopUoRSUltYK2cBzad7g6SgfqEaVtiMNBh4+kZC3dFyH7+ni9ljSetlxETNwS5tEzZ2tRz5uIGbaavMmuPUtFNMgxWvzzAq36pDZG6GSWSIlCvvLeK6+HngX3uqtUnxkBL+9zw7YCI2N0dAnVOpM5NlOLVnDUFdVgU5KiVpGp7lF7NLlgOQEeaGDps5W5nQRVdaw213D5ET8RtZFIhoSwJ40BKvbEkzwNADwD5BGWsk4S6Dei3b9/uiNShaYeZO2RtmLd2H2sHUfqbO46413VL/gCgXq/VtC2gJu1nZvCsF6PljGr91HXWqT/Aq1OvSahreccVIIxNFCltFIG6rXSQsHOIBGqU2dEz6zkQSeFik+2XIp6nbnuGPE9dj7/Na56lt04drBFHfFuA+6JtF3suIWfdsjt37kxAUI0JjcwTXqJfv/WrpXqBClYLVb1i88VT5+9McdaKUtBnR0v764RxbzLJSUryPAB0f5AM1GOSt0STQEfyhOZdAGrJRUlFEKX3i8gd1Krr32cD2J9pPmWve9d5cej/d6Ue60W28kVkkwyBFaUP8FaU1jTUK73u6u8n7tndKNQBbjhixRDnwrCi9LDEbKiT72PBXu+1iMmKVf1SqAl1KE/UA3YMThl/nHd90UoWkQGfRW0F7JVs2wbM0UjjQ4at3CkKhK++OTtGD9iJXuQhVDmgzdseMmbdYr0tdQGoYxI2zRJ9/8DRa9J1wrgnQ2Cl9GjQJvVzifP4KermHZi+VvS46KTC8STQlRa7Hu7+83Jln5lfyLIxM+bv8oUovW7TpMOdghZHgf3yzIsphQJVL8J+umw5Iwn1x59Paifa+6X6V/+ahTplS+Tg5KZMklSr9wu1sKiIFTkD2JXrRuHSQ/vnUEBpBtRZNoxRqFMTYAlZ007mB+pordwEK0YkagaYQzkkBqdRqJN2DMBdT+SO74kXnZO6nLVmMe7jEhKZu0MiWTjk+NdnozwCFr4rutiHKEXsR4KcTDSC3tzx+YiWXeYKNxd70i3pHAAa4PrJ56VhMsfphHEP0g8nJXmebkhdQT6BGWtEjxuXuHkcCXPcifHgoROdZaP1h13jr23d/llrj4AFCdh2qes2ZU/8tDc6qFgvdqDL+Ol6oW6kS2NNQ50sLaQTpHhFpRldGpkrMStqvouopGyZslgqnKyoMQvq1WwY2z0Yh3q1FcGVk6SraqKUJVjwAyWDkGQkBa/Bv2ltQmGGcGsAuCZE3vS9wGvwb/AeEZBXidRX5Geo9XCBxURIw5AikSIA5kiDkQYhDYRGXLuKvogeEbNhRaegjJ3kvqLNvOZ8CJG5sqlElaicAnk1fxqi50+PnA4HWLfvvuhNgCUpeK33wKzszKx3xrLg6kAFMOTPkR+lbiTIkboo6qzIF9efk9UtYLXQdgsNdGIf0tZEO4AWnJYArLr0hhu3ftxi8Kj8HhzbRShK1+Ony2yQcTf3U8eNrZzdIKzKdanJpqa7T5rSFwevBTjTLzLru/ptzjkayLVWrh6XTvcZeuDWiZOxgjAfSsOc2KGI3HIujFrpyYrKg1gQJ+u2SUuDExUHSMjfZPlx1I2hrgyIa4FcC+ayQKcXGjFLGDkVL7woXbjqRctPl4G6tfPR/Tdw7xjWBFQlOaz8cnYvy1o9vrRLyLaSBu7n73mQN/K4fLrv0HeuvbZtjkRkrgXzcLqKhROVk6V/dpALAFwNzn461c0kdeWoC0NaEMcgJ6taMMy1onMtoLNq0hvrALpUgtQs68WC+v09cIWL0rsnnIJ95SIq5ZcSQNFDgUvgley1E0/5hb19TwFeAfn1LdvTODYLD+RDJGAeQvVB4dkrPJDTAFeDtwxczZYarFnypcSKxu0ROQPmnhTMtaJzYaDz2gGIAl1PglTUerGgbg1OtF7GySdUlGwqv6R+CkR6KtFjkGIT9LuStzHutH/4ju8atr1w14H8udY/n/IP/+DKinze5tCvmAxzVXuFslZIkNMQ58FbBK6ywDUiX446ceTDAzkjImfZLHqjczcNoDs1Sregbg1Dw2XMo7YEb2X1S1SV3ITyy9kV2zAssCvgCr+YNGfhD536vlvybMubtR3kl2Zl5KhtMyeQ/JSGOcteEQS5FsDVAO1rQJ1Mkg9H3gx5qYDckwI5abOQMJeJzh0KdJkoXaQ+neen01DnLTyyhjXqKL/cXRSQaIJdAduA81PmpNcawLNBrgVzM6LyYEZUrhfkvEoQFrxlwCoqDF2Z9zJhTYuANy8a50XkGOQsmPOic0cCXbjipQasFwvq1rBD3UcC7CEK3PorwAP4DTw/NS3jB9/gfzob8Kf9wg8rIKchLpr4JGFOglwmKmclPEVArlXO56sBbW8NeTlaDFizoM0COCsa1wI5D+as6NxMoKvaLmpRulaC1IK6NRwFdS8RsAPEFKCF0FE7hjsA8mLK3MxSjx7FjgJ5aYfen52fNH0tUYKIAU5C/BUHJz6DGAlPWZDLVIFwQa0CVi11MEmeKmrPkIcKxFVBrgHzKtG5UaDLJkdlonQL6tZw6IBfTC2w46oYBex01B6uALEK3H85/u2oCzFT80rb9/zYOMh7fXo+NnXNrZKTExn7gGKAkxA3CnLZqLw7I9HZTRDkLICLWhciYBUVhq6nDlDTsPbgwFsE4jyQs2BOWy10dK4H6EwfXTQ5quala1kvon66lSS1hhbU4Re1I+Gn0mAnyx3pqB177WGcyH1QFcBLRPClnr0+uTAhZfWtb7+LJqCNwT2cAXAS4jyQ60l6BnKiclZEToKcZauolvKpgFsUrFpwNVPtVNSWI3cNiGuBnAVz2mqho3NRoAv76FrJUUdH6RbUraEFdQ8C7KyIHZc70lE79tqDGZF7f0b0bqsoQYCP+jE6Off7Fp2/pEF+sqlX6blhEzb+dOBQPAFqWhGESIBrVa6YAXI6KmeBXCQa16r+8BSEdTsDamuS3FXUhiM1iGuBvBrMGVYLHZ2bAnQ9tgsP6hjolvViDUdAvS0BdtqK6UzUsWM7pgfhtfPgHsoBPAn5gTf2HZx4dmh0wdmI6PXwswLlwQSkaQ0mNIgCOAlxOho3K+HJ8shFonHREj4Z20IEqqKioSsLaRrULLUipQFxLZCzYF7FaqGic9OBLpMcFYnSDVovFtStYR//AWAmXWaCghR8AAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 205px;
+  height: 51px;
+  margin: 10px 0 0 60px; }
+.headerContainer_noAccount {
+  min-height: 130px;
+  overflow: visible; }
+.menuLinks, .ie .menuLinks {
+  text-align: right; }
+.menuLinks span > span {
+  margin-left: 10px;
+  margin-right: 10px; }
+.menu_NoAccount {
+  margin: 10px 60px 0 0; }
+.headerSection_Logos, .ie .headerSection_Logos {
+  display: inline-block;
+  width: 49.9%;
+  overflow: visible;
+  float: left; }
+/*No Elgible Account Error Ends*/
+/* ========== BEGIN: No Eligible Account ========== */
+@media (min-device-width: 992px) {
+  .noEligible-account-error {
+    margin: 0 60px; } }
+@media (max-device-width: 992px) {
+  .noEligible-account-error .account-error {
+    margin: 80px 5px 5px 5px; } }
+.noEligible-account-error div.account-error-header-Container {
+  background-color: #074080;
+  min-height: 41px;
+  position: relative;
+  margin: 0px;
+  padding-left: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+  .noEligible-account-error div.account-error-header-Container p.account-error-header {
+    padding-left: 10px;
+    line-height: 2.8;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff; }
+    @media (max-device-width: 767px) {
+      .noEligible-account-error div.account-error-header-Container p.account-error-header {
+        line-height: 1.8;
+        font-size: 14px; } }
+.noEligible-account-error .account-error-content {
+  padding: 50px 20px;
+  border: solid 1px #a1a1a1;
+  margin: 10px 0;
+  border-radius: 4px; }
+  .noEligible-account-error .account-error-content p {
+    margin-bottom: 40px; }
+    @media (max-device-width: 767px) {
+      .noEligible-account-error .account-error-content p {
+        color: #919191; } }
+  .noEligible-account-error .account-error-content div input {
+    background-color: #074080;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    border-style: none;
+    color: #FFF;
+    height: 30px;
+    width: 140px; }
+/* ========== END : No Eligible Account ========== */
+/* ========== START : Welcome / Bubblechat ========== */
+.ews-welcome * {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+.ews-welcome .ews-welcome-position-container {
+  text-align: center; }
+.ews-welcome .ews-welcome-btn {
+  height: 44px;
+  width: 280px;
+  margin: 0 auto;
+  background-color: #074080 !important;
+  cursor: pointer;
+  text-align: center;
+  font-size: 21px;
+  padding: 8px;
+  color: #FFFFFF;
+  border-style: none;
+  font-weight: 200;
+  border-radius: 1px;
+  transition: 1s ease-in-out;
+  display: none; }
+.ews-welcome .ews-welcome-cancel {
+  display: none;
+  margin-top: 20px; }
+.ews-welcome .welcome-container {
+  margin: 0 auto; }
+@media (max-device-width: 1024px) {
+  .ews-welcome .welcome-container .container {
+    width: 100%; } }
+.ews-welcome #bubblechat {
+  width: 286px;
+  float: none;
+  margin: 0 auto;
+  height: 490px;
+  position: relative; }
+  .ews-welcome #bubblechat div {
+    transition: all 0.25s ease-in-out; }
+.ews-welcome #zelle-head {
+  position: absolute;
+  left: 0;
+  right: 0; }
+.ews-welcome h1 {
+  color: #59595b;
+  font-size: 34px;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  position: relative; }
+  .ews-welcome h1 .logo {
+    background: url(/USB/content/Shared/Styles/Images/Zelle/zelle_logo.svg) no-repeat;
+    width: 86px;
+    height: 35px;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    top: -3px; }
+.ews-welcome .zelle-sm-welcome {
+  vertical-align: super;
+  font-size: 9px; }
+.ews-welcome .chat {
+  background-color: #dbdbda;
+  border-radius: 14px;
+  color: #59595b;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 18px;
+  margin: 0 auto 10px;
+  float: none;
+  display: none;
+  clear: both;
+  padding: 20px;
+  position: absolute;
+  width: 284px; }
+.ews-welcome .chat:before {
+  bottom: -4.5px;
+  height: 10px;
+  width: 14px;
+  background: #FFF;
+  border-radius: 100%;
+  content: '';
+  position: absolute;
+  z-index: 9;
+  left: -9.5px;
+  transform: rotate(-44deg); }
+.ews-welcome .chat:after {
+  background-color: #dbdbda;
+  width: 15px;
+  border-radius: 0%;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 7px;
+  left: -2px;
+  transform: rotate(-30deg); }
+.ews-welcome .emoji {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDNFQzc0NzAxNzAzMTFFN0EyODJBODY2MUVGQjE5MEMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDNFQzc0NkYxNzAzMTFFN0EyODJBODY2MUVGQjE5MEMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhGQkVBNjM0MTIzNTExRTc5OTg1QTAyRjBFQkU0QTYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhGQkVBNjM1MTIzNTExRTc5OTg1QTAyRjBFQkU0QTYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+UFkMwgAAC1RJREFU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") no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  display: inline-block;
+  position: absolute; }
+.ews-welcome .enter {
+  animation: chatEnter 0.5s ease-in-out;
+  display: block; }
+.ews-welcome .head1 {
+  top: 226px; }
+.ews-welcome .zelleShow {
+  display: block; }
+.ews-welcome .head2 {
+  top: 99px; }
+.ews-welcome .chat1-1 {
+  top: 168px; }
+.ews-welcome .head3 {
+  top: 13px; }
+.ews-welcome .chat1-2 {
+  top: 82px;
+  background-color: #ebeaea; }
+.ews-welcome .chat1-2:after {
+  background-color: #ebeaea; }
+.ews-welcome .chat2-1 {
+  top: 186px; }
+.ui-mobile .ews-welcome .zelle-cancel {
+  position: fixed; }
+.ui-mobile .ews-welcome .zelle-header {
+  margin: 36px auto 0 !important; }
+.ui-mobile .ews-welcome .ews-welcome-btn {
+  bottom: 14px;
+  position: fixed;
+  left: 14px;
+  right: 14px;
+  width: calc(100% - 28px);
+  z-index: 10; }
+  @media (min-device-width: 767px) {
+    .ui-mobile .ews-welcome .ews-welcome-btn {
+      bottom: 89px;
+      width: 280px; } }
+  @media (min-device-width: 767px) and (orientation: landscape) {
+    .ui-mobile .ews-welcome .ews-welcome-btn {
+      bottom: 32px; } }
+.ui-mobile .ews-welcome h1 {
+  font-size: 24px; }
+  .ui-mobile .ews-welcome h1 .logo {
+    top: 5px; }
+.ui-mobile .ews-welcome .head1 {
+  top: 233px; }
+.ui-mobile .ews-welcome .zelleShow {
+  opacity: 1; }
+.ui-mobile .ews-welcome .head2 {
+  top: 96px; }
+.ui-mobile .ews-welcome .chat1-1 {
+  top: 165px; }
+.ui-mobile .ews-welcome .head3 {
+  top: 20px; }
+.ui-mobile .ews-welcome .chat1-2 {
+  top: 79px; }
+.ui-mobile .ews-welcome .chat2-1 {
+  top: 183px; }
+/* ANIMATION CSS */
+@keyframes chatEnter {
+  from, to {
+    transform: translate3d(-150px, 0, 0) scale(0); }
+  from {
+    transform: translate3d(-145px, 0, 0) scale(0);
+    opacity: 0; }
+  60% {
+    transform: translate3d(15px, 0, 0) scale(1.15);
+    opacity: 1; }
+  85% {
+    transform: translate3d(-5px, 0, 0) scale(0.95); }
+  to {
+    transform: none; } }
+/* ========== END : Welcome / Bubblechat ========== */
+/*Carousel START*/
+ol.carousel-indicators {
+  display: none; }
+  @media (max-device-width: 767px) and (orientation: portrait) {
+    ol.carousel-indicators {
+      display: block;
+      position: absolute;
+      top: 78%;
+      margin: 0;
+      left: 45%;
+      right: 0;
+      width: auto;
+      z-index: 1; } }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) {
+    ol.carousel-indicators {
+      display: block;
+      position: absolute;
+      top: 79%;
+      margin: 0;
+      left: 47%;
+      right: 0;
+      width: auto;
+      z-index: 1; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    ol.carousel-indicators {
+      display: block;
+      position: absolute;
+      top: 78%;
+      margin: 0;
+      left: 47%;
+      right: 0;
+      width: auto;
+      z-index: 1; } }
+  @media (max-device-width: 1024px) and (min-device-width: 767px) and (orientation: landscape) {
+    ol.carousel-indicators {
+      top: 68%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    ol.carousel-indicators {
+      top: 76%; } }
+  @media (min-device-width: 812px) and (max-device-height: 375px) {
+    ol.carousel-indicators {
+      top: 64%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    ol.carousel-indicators {
+      display: none; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    ol.carousel-indicators {
+      top: 72%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    ol.carousel-indicators {
+      top: 72%; } }
+  ol.carousel-indicators li, ol.carousel-indicators li.active {
+    width: 7px;
+    height: 7px;
+    margin: 0 1px 0 0;
+    border-radius: 100%;
+    border: 0;
+    display: none;
+    background-color: #a1a1a1; }
+    @media (max-device-width: 1366px) {
+      ol.carousel-indicators li, ol.carousel-indicators li.active {
+        display: inline-block; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      ol.carousel-indicators li, ol.carousel-indicators li.active {
+        width: 7px;
+        height: 7px;
+        margin: 0 1px 0 0;
+        border-radius: 100%;
+        border: 0;
+        display: inline-block;
+        background-color: #a1a1a1; } }
+  ol.carousel-indicators li.active {
+    background: #fff;
+    width: 8px;
+    height: 8px; }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      ol.carousel-indicators li.active {
+        background: #fff;
+        width: 8px;
+        height: 8px; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  ol.carousel-indicators li, ol.carousel-indicators li.active {
+    width: 7px;
+    height: 7px;
+    margin: 0 1px 0 0;
+    border-radius: 100%;
+    border: 0;
+    display: inline-block;
+    background-color: #a1a1a1; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  ol.carousel-indicators li, ol.carousel-indicators li.active {
+    width: 7px;
+    height: 7px;
+    margin: 0 1px 0 0;
+    border-radius: 100%;
+    border: 0;
+    display: inline-block;
+    background-color: #a1a1a1; } }
+@media (max-device-width: 1024px) and (min-device-width: 767px) {
+  ol.carousel-indicators li.active {
+    background: #fff;
+    width: 8px;
+    height: 8px; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  ol.carousel-indicators li.active {
+    background: #fff;
+    width: 8px;
+    height: 8px; } }
+.welcome-carousel {
+  text-align: center; }
+  @media (max-device-width: 1024px) {
+    .welcome-carousel {
+      text-align: unset; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .welcome-carousel {
+      text-align: unset; } }
+  .welcome-carousel .container {
+    display: block;
+    max-width: 980px;
+    margin: 0 auto; }
+  .welcome-carousel section {
+    position: relative;
+    width: 100%;
+    margin-top: 30px; }
+  .welcome-carousel .col-66 {
+    position: relative;
+    width: 671px;
+    float: left;
+    min-height: 100px;
+    margin-right: 30px;
+    text-align: center; }
+  .welcome-carousel .col-33 {
+    width: 279px;
+    float: left;
+    min-height: 100px;
+    text-align: center; }
+  .welcome-carousel button.cta {
+    cursor: pointer;
+    background-color: #007CBE;
+    padding: 15px 40px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    border-radius: 4px;
+    margin: 30px auto 30px auto;
+    font-size: 18px;
+    transition: .1s;
+    border: none; }
+    @media (max-device-width: 1200px) and (orientation: portrait) {
+      .welcome-carousel button.cta {
+        top: 83%;
+        position: fixed;
+        margin: 30px 30px 30px 10%;
+        width: 80%;
+        border-radius: 7px; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel button.cta {
+        bottom: 3%;
+        position: fixed;
+        margin: 0 0 0 30px;
+        width: 40%;
+        border-radius: 7px;
+        top: unset; } }
+    @media (max-device-width: 1024px) and (min-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      .welcome-carousel button.cta {
+        width: 50%;
+        margin: 30px 25% 30px 25%; } }
+    @media (min-device-width: 812px) and (max-device-height: 375px) and (orientation: portrait) {
+      .welcome-carousel button.cta {
+        top: 67%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel button.cta {
+        top: 83%;
+        position: fixed;
+        width: 50%;
+        margin: 30px 25% 30px 25%;
+        border-radius: 7px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel button.cta {
+        margin: 0 0 0 30px;
+        width: 40%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+      .welcome-carousel button.cta {
+        bottom: 15%; } }
+  .welcome-carousel button.cta:hover {
+    background-color: #0C2074; }
+  .welcome-carousel img.zelle-logo {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 35px; }
+  .welcome-carousel ol {
+    list-style-type: none; }
+  .welcome-carousel li {
+    list-style-type: none; }
+  .welcome-carousel span.slide-next {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 168px;
+    right: 0;
+    padding: 15px 40px;
+    transition: .1s;
+    /*iPad Pro*/ }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel span.slide-next {
+        top: 70%;
+        right: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel span.slide-next {
+        top: 70%;
+        right: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media (max-device-width: 767px) and (orientation: portrait) {
+      .welcome-carousel span.slide-next {
+        top: 74%;
+        padding-right: 10%; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: 65%;
+        right: 5%; } }
+    @media only screen and (max-device-width: 812px) and (min-device-width: 768px) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: 65%;
+        right: 5%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: 73%;
+        padding-right: 9.5%;
+        z-index: 0; } }
+    @media (min-device-width: 812px) and (max-device-height: 375px) {
+      .welcome-carousel span.slide-next {
+        top: 70%; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: unset;
+        right: 0;
+        bottom: 0; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: 65%;
+        right: 5%;
+        z-index: 0; } }
+    @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        top: unset;
+        right: 0; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+      .welcome-carousel span.slide-next {
+        bottom: 10%; } }
+  .welcome-carousel span.slide-back {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 168px;
+    left: 0;
+    padding: 15px 40px;
+    transition: .1s;
+    /*iPad Pro*/ }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel span.slide-back {
+        top: 70%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel span.slide-back {
+        top: 70%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media (max-device-width: 767px) and (orientation: portrait) {
+      .welcome-carousel span.slide-back {
+        top: 74%;
+        padding-left: 10%; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        top: 65%;
+        left: 5%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        top: 73%;
+        padding-left: 9.5%; } }
+    @media (min-device-width: 812px) and (max-device-height: 375px) {
+      .welcome-carousel span.slide-back {
+        top: 70%; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        top: unset;
+        left: unset;
+        right: 15%;
+        bottom: 0;
+        z-index: 0; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        top: 65%;
+        left: 5%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        top: unset;
+        left: unset; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+      .welcome-carousel span.slide-back {
+        bottom: 10%; } }
+  .welcome-carousel .slide-next span,
+  .welcome-carousel .slide-back span {
+    display: inline-block;
+    height: 44px;
+    width: 44px; }
+  .welcome-carousel .carousel-container {
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    height: 408px;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 671px; }
+    @media (max-device-width: 1200px) {
+      .welcome-carousel .carousel-container {
+        height: calc(100vh - 85px);
+        width: 100vw;
+        border-radius: 0; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      .welcome-carousel .carousel-container {
+        height: calc(100vh - 85px);
+        width: 100vw;
+        border-radius: 0; } }
+  .welcome-carousel .carousel-nav {
+    position: absolute;
+    z-index: 2;
+    top: 370px;
+    left: 45%; }
+  .welcome-carousel .carousel-nav a {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    transition: .3s ease; }
+  .welcome-carousel .carousel-nav a:hover {
+    background-color: white; }
+  .welcome-carousel .carousel-container img {
+    width: 671px; }
+  .welcome-carousel .carousel-container h2 {
+    position: absolute;
+    top: 322px;
+    left: 35px;
+    color: white;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "helvetica", sans-serif; }
+    @media (max-device-width: 767px) {
+      .welcome-carousel .carousel-container h2 {
+        top: 55%;
+        line-height: 33px;
+        font-size: 24px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 54%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 36px;
+        line-height: 43px;
+        width: 40%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 48%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 36px;
+        line-height: 43px;
+        width: 50%; } }
+    @media (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 47%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (max-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 45%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 65%; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (max-device-height: 667px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 55%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 60%; } }
+    @media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (max-device-height: 736px) and (min-device-height: 668px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 50%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 70%; } }
+    @media only screen and (min-device-width: 359px) and (max-device-width: 378px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 43%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 70%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container h2 {
+        top: 48%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        line-height: 22px;
+        font-size: 19px; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel .carousel-container h2 {
+        top: 35%;
+        width: 100%;
+        margin: unset;
+        padding: unset; } }
+    @media only screen and (max-device-width: 767px) and (orientation: landscape) {
+      .welcome-carousel .carousel-container h2 {
+        line-height: 22px;
+        font-size: 19px; } }
+    @media (max-device-width: 1024px) and (min-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .carousel-container h2 {
+        top: 37%;
+        width: 40%;
+        left: 10%;
+        font-size: 36px;
+        line-height: 43px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .carousel-container h2 {
+        width: 35%;
+        top: 46%;
+        left: 10%;
+        font-size: 36px;
+        line-height: 43px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .carousel-container h2 {
+        line-height: 22px;
+        font-size: 19px;
+        width: 100%;
+        left: 35px;
+        top: 30%; } }
+  .welcome-carousel .carousel-container p {
+    position: absolute;
+    top: 350px;
+    left: 35px;
+    color: white;
+    display: block;
+    font-family: "helvetica", sans-serif;
+    font-size: 17px;
+    /*iPad Pro */ }
+    @media (max-device-width: 767px) {
+      .welcome-carousel .carousel-container p {
+        line-height: 19px;
+        font-size: 16px; } }
+    @media (max-device-width: 1024px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        width: 81%;
+        padding-right: 24%;
+        padding-left: 1%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 63%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        line-height: 43px;
+        font-size: 24px;
+        line-height: 29px; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 59%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        line-height: 29px;
+        font-size: 24px; } }
+    @media (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 57%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (max-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 55%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 80%; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (max-device-height: 667px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 67%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (max-device-height: 736px) and (min-device-height: 668px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 61%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0; } }
+    @media only screen and (min-device-width: 359px) and (max-device-width: 378px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 55%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 80%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: portrait) {
+      .welcome-carousel .carousel-container p {
+        top: 58%;
+        left: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        line-height: 19px;
+        font-size: 16px;
+        width: 90%; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        top: 45%;
+        width: 100%;
+        padding: unset;
+        margin: unset; } }
+    @media (max-device-width: 1024px) and (min-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        top: 50%;
+        width: 40%;
+        left: 10%;
+        font-size: 24px;
+        line-height: 29px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        width: 40%;
+        top: 58%;
+        left: 10%;
+        font-size: 24px;
+        line-height: 29px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        line-height: 19px;
+        font-size: 16px;
+        width: 100%;
+        left: 35px;
+        top: 40%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        top: 45%;
+        line-height: 19px;
+        font-size: 16px; } }
+    @media only screen and (min-device-width: 359px) and (max-device-width: 378px) and (orientation: landscape) {
+      .welcome-carousel .carousel-container p {
+        top: 40%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 43%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 25%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 50%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 42%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 28%; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 25%; } }
+  @media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (max-device-height: 736px) and (min-device-height: 668px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 53%; } }
+  @media only screen and (min-device-width: 359px) and (max-device-width: 378px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 40%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 50%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 30%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 53%;
+      line-height: 28px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 35%;
+      line-height: 28px;
+      line-height: 24px; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 50%;
+      line-height: 28px; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container h2 {
+      top: 25%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 53%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 40%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 58%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 53%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 40%; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 35%; } }
+  @media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (max-device-height: 736px) and (min-device-height: 668px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 65%; } }
+  @media only screen and (min-device-width: 359px) and (max-device-width: 378px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 55%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 62%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 40%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 64%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 45%; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 64%; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .welcome-carousel .tux-carousel-container p {
+      top: 35%; } }
+  .welcome-carousel .hidden {
+    display: none; }
+  .welcome-carousel .logo-block {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/Zelle-logo-no-tagline-white.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 15px;
+    width: 65%;
+    height: 17%; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .welcome-carousel .logo-block {
+        margin-left: -91px; } }
+    @media screen and (min-width: 0\0) {
+      .welcome-carousel .logo-block {
+        margin-left: -91px; } }
+    @media (max-device-width: 767px) and (orientation: portrait) {
+      .welcome-carousel .logo-block {
+        width: 38%;
+        left: 18%;
+        margin-left: 12%;
+        margin-top: 16%; } }
+    @media (max-device-width: 1024px) and (min-device-width: 767px) and (orientation: portrait) {
+      .welcome-carousel .logo-block {
+        width: 38%;
+        left: 26%;
+        margin-left: 30px;
+        margin-top: 50px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      .welcome-carousel .logo-block {
+        width: 38%;
+        left: 30%;
+        margin-left: 30px;
+        margin-top: 50px; } }
+    @media (min-device-width: 812px) and (max-device-height: 375px) and (orientation: portrait) {
+      .welcome-carousel .logo-block {
+        margin-left: 68%;
+        margin-top: 4%; } }
+    @media (max-device-width: 1000px) and (orientation: landscape) {
+      .welcome-carousel .logo-block {
+        left: unset; } }
+    @media only screen and (max-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .logo-block {
+        left: 33%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .logo-block {
+        left: 33%; } }
+    @media only screen and (max-device-height: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .logo-block {
+        left: unset; } }
+  .welcome-carousel .slide-first {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/carouselolbslide1.200734961.jpg");
+    background-repeat: no-repeat;
+    height: 410px; }
+    @media (max-device-width: 1024px) {
+      .welcome-carousel .slide-first {
+        background-size: 100vw calc(100vh - 85px);
+        height: calc(100vh - 85px); } }
+    @media (min-device-width: 1025px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      .welcome-carousel .slide-first {
+        background-size: 100vw calc(100vh - 85px);
+        height: calc(100vh - 85px); } }
+    @media (max-device-width: 767px) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone-375x667.200734961.jpg"); } }
+    @media (max-device-width: 767px) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone-667x375.200734961.jpg"); } }
+    @media (max-device-width: 320px) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone5SE-320x568.200734961.jpg"); } }
+    @media (min-device-width: 321px) and (max-device-width: 375px) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone-375x667.200734961.jpg"); } }
+    @media (min-device-width: 376px) and (max-device-width: 414px) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone678plus-414x736.200734961.jpg"); } }
+    @media (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphoneX-375x812.200734961.jpg"); } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone5SE-568x320.200734961.jpg"); } }
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone-667x375.200734961.jpg"); } }
+    @media (min-device-width: 569px) and (max-device-width: 667px) and (max-device-height: 375px) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone-667x375.200734961.jpg"); } }
+    @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone678plus-736x414.200734961.jpg"); } }
+    @media (min-device-width: 570px) and (max-device-width: 736px) and (min-device-height: 414px) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphone678plus-736x414.200734961.jpg"); } }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-iphoneX-812x375.200734961.jpg"); } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-ipadPro-1024x1366_1.200734961.jpg"); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-ipad-768x1024.200734961.jpg"); } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-ipadPro-1024x1366_2.200734961.jpg"); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .slide-first {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-1-ipad-1024x768.200734961.jpg"); } }
+  .welcome-carousel .slide-third {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/carouselolbslide3.200734961.jpg");
+    background-repeat: no-repeat;
+    height: 410px; }
+    @media (max-device-width: 1024px) {
+      .welcome-carousel .slide-third {
+        background-size: 100vw calc(100vh - 85px);
+        height: calc(100vh - 85px); } }
+    @media (min-device-width: 1025px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      .welcome-carousel .slide-third {
+        background-size: 100vw calc(100vh - 85px);
+        height: calc(100vh - 85px); } }
+    @media (max-device-width: 767px) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone-375x667.200734961.jpg"); } }
+    @media (max-device-width: 767px) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone-667x375.200734961.jpg"); } }
+    @media (max-device-width: 320px) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone5SE-320x568.200734961.jpg"); } }
+    @media (min-device-width: 321px) and (max-device-width: 375px) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone-375x667.200734961.jpg"); } }
+    @media (min-device-width: 376px) and (max-device-width: 414px) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone678plus-414x736.200734961.jpg"); } }
+    @media (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphoneX-375x812.200734961.jpg"); } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone5SE-568x320.200734961.jpg"); } }
+    @media (min-device-width: 569px) and (max-device-width: 667px) and (max-device-height: 375px) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone-667x375.200734961.jpg"); } }
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone-667x375.200734961.jpg"); } }
+    @media (min-device-width: 570px) and (max-device-width: 736px) and (min-device-height: 414px) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone678plus-736x414.200734961.jpg"); } }
+    @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphone678plus-736x414.200734961.jpg"); } }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-iphoneX-812x375.200734961.jpg"); } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-ipadPro-1024x1366_2.200734961.jpg"); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-ipad-768x1024.200734961.jpg"); } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-ipadPro-1024x1366_1.200734961.jpg"); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .welcome-carousel .slide-third {
+        background-image: url("/USB/content/Shared/Styles/Images/Zelle/screen-3-ipad-1024x768.200734961.jpg"); } }
+  .welcome-carousel .carousel-arrowleft {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/icon-circlearrowleft.svg");
+    background-repeat: no-repeat; }
+  .welcome-carousel .carousel-arrowleft:focus, .welcome-carousel .carousel-arrowright:focus {
+    outline: none; }
+  .welcome-carousel .carousel-arrowright {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/icon-circlearrowright.svg");
+    background-repeat: no-repeat; }
+  .welcome-carousel .carousel-arrowleft:hover {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/icon-circlearrowleftHover.svg");
+    background-repeat: no-repeat; }
+  .welcome-carousel .carousel-arrowright:hover {
+    background-image: url("/USB/content/Shared/Styles/Images/Zelle/icon-circlearrowrightHover.svg");
+    background-repeat: no-repeat; }
+/*Carousel END*/
+.recipient-scroll {
+  max-height: 260px;
+  overflow: auto;
+  border-bottom: 1px solid #ddd; }
+.widget-scroll {
+  max-height: 300px;
+  overflow: auto;
+  border-bottom: 1px solid #ddd; }
+.no-accounts-error {
+  color: #0090c6;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-left: 10px; }
+  @media (min-device-width: 767px) {
+    .no-accounts-error {
+      min-height: 400px;
+      font-size: 21px; } }
+/* ========== START : iPad Pro Overrides ========== */
+.zelle-keypad {
+  display: none; }
+.ui-mobile .zelle-keypad {
+  display: block; }
+.ui-mobile .hide-when-xs {
+  display: none !important; }
+@media (min-device-width: 1024px) {
+  .ui-mobile .show-ui-mobile-element {
+    display: block !important; }
+  .ui-mobile .ews-select-otp .codeStyle {
+    text-align: center;
+    letter-spacing: 3pt;
+    font-size: 18px;
+    color: #58595b;
+    margin: 50px auto 0; }
+  .ui-mobile .ews-select-otp .subtext {
+    font-weight: 300;
+    font-size: 17px; }
+  .ui-mobile .ews-select-otp .zelle-overlay .select-continuebtn-absolute-xs .select-otp-continuebtn-xs {
+    border-style: none;
+    cursor: default;
+    text-align: center;
+    font-size: 21px;
+    height: 44px;
+    background-color: #a1a0a0;
+    color: #ffffff;
+    font-weight: 200; } }
+/* ========== END : iPad Pro Overrides ========== */
+/* ========== START : Android Scroll Fix ========== */
+#usbwrapperOmni.omniScrollFix {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0 !important; }
+.omniScrollFixInput {
+  position: fixed;
+  bottom: 125px;
+  left: 0;
+  margin: 0 50px !important;
+  width: 100%;
+  width: calc(100% - 100px) !important; }
+/* ========== END : Android Scroll Fix ========== */
+.zelle-sm {
+  font-size: 9px;
+  vertical-align: super; }
+/*Adding below class to fix demo banner issue in iPhoneX*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .ui-mobile .zelle-new-ui.fixed-footer .zelle-content .zelleDemoContainer {
+    margin-top: 30px; } }
+.zelleDemoContainer {
+  padding: 5px 0 5px 0;
+  border-width: 1px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #EAEAE4;
+  margin-left: -130px;
+  margin-right: 30px; }
+  @media (max-device-width: 1024px) {
+    .zelleDemoContainer {
+      margin-left: 5px;
+      margin-right: 5px; } }
+.zelleDemoContentContainer {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+  padding: 12px 0 10px 30%;
+  position: relative; }
+  @media (max-device-width: 767px) {
+    .zelleDemoContentContainer {
+      padding: 5px 0 10px 0; } }
+  @media (max-device-width: 1024px) {
+    .zelleDemoContentContainer {
+      line-height: 16px; } }
+  @media (min-device-width: 768px) {
+    .zelleDemoContentContainer {
+      font-size: 18px; } }
+.zelleDemoContentContainer span {
+  font-size: 14px;
+  letter-spacing: 0; }
+  @media (min-device-width: 768px) {
+    .zelleDemoContentContainer span {
+      font-size: 18px; } }
+.zelleDemoContentContainer.zelleDemoContentContainer a {
+  color: #555555 !important;
+  font-size: 14px;
+  text-decoration: underline !important;
+  letter-spacing: 0; }
+  @media (min-device-width: 768px) {
+    .zelleDemoContentContainer.zelleDemoContentContainer a {
+      font-size: 18px; } }
+.zelleDemoContentContainer.zelleDemoContentContainer a:focus, .zelleDemoContentContainer.zelleDemoContentContainer a:active, .zelleDemoContentContainer.zelleDemoContentContainer a:hover {
+  color: #555555 !important;
+  text-decoration: underline !important; }
+.zelleDemoTextLink {
+  font-size: 16px;
+  line-height: 21px;
+  color: #555555 !important;
+  text-decoration: underline; }
+.zelleDemoTextLink:visited, .zelleDemoTextLink:focus, .zelleDemoTextLink:active, .zelleDemoTextLink:hover {
+  color: #555555 !important;
+  text-decoration: underline; }
+.zelleDemoIcon {
+  float: left;
+  height: 26px;
+  margin: -2px 12px 12px 20px;
+  width: 24px; }
+  @media (max-device-width: 1024px) {
+    .zelleDemoIcon {
+      margin: 2px 15px 12px 20px; } }
+  @media (max-device-width: 359px) {
+    .zelleDemoIcon {
+      margin: 2px 1px 12px 1px; } }
+.redArrowIcon {
+  background-image: url("/USB/content/Shared/Styles/Images/Zelle/circle-arrow-red.svg");
+  background-repeat: no-repeat; }
+.redArrowIcon:hover {
+  background-image: url("/USB/content/Shared/Styles/Images/Zelle/circle-arrow-red-hover.svg");
+  background-repeat: no-repeat; }
+.zelleDemoCloseIcon {
+  float: right;
+  height: 26px;
+  margin: 1px 12px 12px 20px;
+  width: 24px;
+  background-image: url("/USB/content/Shared/Styles/Images/Zelle/Zelle-close-icon.svg");
+  background-repeat: no-repeat; }
+  @media (max-device-width: 1024px) {
+    .zelleDemoCloseIcon {
+      margin: 6px 15px 12px 0; } }
+  @media (max-device-width: 330px) {
+    .zelleDemoCloseIcon {
+      margin: 6px 0 0 0; } }
+.zelleDemoIframe {
+  width: 100%;
+  height: 100% !important;
+  border: 0;
+  background-color: white; }
+.iframe-close::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='28px' height='28px' viewBox='0 0 32 32' enable-background='new 0 0 28 28' xml:space='preserve'%3e%3cpath fill='%2359595b' d='M17.414,16l7.314-7.314c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16,14.586L8.686,7.271 c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L14.586,16l-7.314,7.314c-0.391,0.391-0.391,1.023,0,1.414 c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L16,17.414l7.314,7.314c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L17.414,16z'/%3e%3c/svg%3e"); }
+  @media (max-width: 430px) {
+    .iframe-close::before {
+      content: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='28px' height='28px' viewBox='0 0 32 32' enable-background='new 0 0 28 28' xml:space='preserve'%3e%3cpath fill='%23FFFFFF' d='M17.414,16l7.314-7.314c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16,14.586L8.686,7.271 c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L14.586,16l-7.314,7.314c-0.391,0.391-0.391,1.023,0,1.414 c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L16,17.414l7.314,7.314c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L17.414,16z'/%3e%3c/svg%3e"); } }
+/* END of Href-../../../../content/Shared/Styles/SharedAuthStyles/Omni/common.css*/
+/* Original Href-../../../../content/Shared/Styles/SharedAuthStyles/ShareAuthStepUpStyles/aw-base.css */
+/*
+CSS RESET
+*/
+.aw-authenticate div, .aw-authenticate span, .aw-authenticate h1, .aw-authenticate h2, .aw-authenticate h3, .aw-authenticate h4, .aw-authenticate h5, .aw-authenticate h6, .aw-authenticate p, .aw-authenticate blockquote, .aw-authenticate pre, .aw-authenticate a, .aw-authenticate abbr, .aw-authenticate em, .aw-authenticate img, .aw-authenticate q, .aw-authenticate s, .aw-authenticate samp, .aw-authenticate small, .aw-authenticate strike, .aw-authenticate strong, .aw-authenticate sub, .aw-authenticate sup, .aw-authenticate tt, .aw-authenticate var, .aw-authenticate b, .aw-authenticate u, .aw-authenticate i, .aw-authenticate center, .aw-authenticate dl, .aw-authenticate dt, .aw-authenticate dd, .aw-authenticate ol, .aw-authenticate ul, .aw-authenticate li, .aw-authenticate fieldset, .aw-authenticate form, .aw-authenticate label, .aw-authenticate legend, .aw-authenticate table, .aw-authenticate caption, .aw-authenticate tbody, .aw-authenticate tfoot, .aw-authenticate thead, .aw-authenticate tr, .aw-authenticate th, .aw-authenticate td, .aw-authenticate article, .aw-authenticate aside, .aw-authenticate footer, .aw-authenticate header, .aw-authenticate hgroup, .aw-authenticate nav, .aw-authenticate section, .aw-authenticate summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font: inherit;
+    vertical-align: baseline;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.aw-authenticate input, .aw-authenticate select, .aw-authenticate button, .aw-authenticate textarea {
+    margin: 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .aw-authenticate button, .aw-authenticate select, .aw-authenticate input[type="checkbox"] {
+        cursor: pointer;
+    }
+.aw-authenticate article, .aw-authenticate aside, .aw-authenticate details, .aw-authenticate figcaption, .aw-authenticate figure, .aw-authenticate footer, .aw-authenticate header, .aw-authenticate hgroup, .aw-authenticate menu, .aw-authenticate nav, .aw-authenticate section {
+    display: block;
+}
+.aw-authenticate ol, .aw-authenticate ul {
+    list-style: none;
+}
+.aw-authenticate blockquote, .aw-authenticate q {
+    quotes: none;
+}
+    .aw-authenticate blockquote:before, .aw-authenticate blockquote:after, .aw-authenticate q:before, .aw-authenticate q:after {
+        content: '';
+        content: none;
+    }
+.aw-authenticate table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.aw-authenticate .aw-right {
+    float: right;
+    position: relative;
+    z-index: 9;
+}
+/*
+CONTROLS TO HIDE CONTENT
+*/
+.sr-only {
+    visibility: hidden;
+    position: fixed;
+    top: -999px;
+    left: -999px;
+}
+/* -------- */
+/* BASE CSS */
+/* -------- */
+/* Containers */
+.aw-authenticate {
+    padding: 25px 40px 40px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica "Neue";
+    overflow: hidden;
+}
+    .aw-authenticate ul li {
+        margin: 10px 0;
+    }
+    .aw-authenticate #aw-password-alignment {
+        position: relative;
+    }
+    .aw-authenticate .error-backdrop {
+        display: block;
+        border: solid 2px #efcacf;
+        border-radius: 4px;
+        background-color: #fff2f1;
+        padding: 15px 15px 15px 15px;
+        margin: 14px 0 14px;
+        position: relative;
+        line-height: 20px;
+    }
+        .aw-authenticate .error-backdrop img {
+            position: absolute;
+            left: 10px;
+            width: 27px;
+        }
+        .aw-authenticate .error-backdrop p {
+            font-weight: bold;
+            font-size: 12px;
+            color: #de162b;
+            line-height: 16px;
+            margin-bottom: 14px;
+            margin-left: 28px;
+            padding: 0 30px 0 0; /*Fix-ADI-1341*/
+        }
+            .aw-authenticate .error-backdrop p:last-of-type {
+                margin-bottom: 0;
+            }
+    .aw-authenticate .error-content {
+        display: inline-block;
+        width: 100%;
+        margin-top: -15px;
+    }
+    /* Interactive Components */
+    .aw-authenticate input[type="text"],
+    .aw-authenticate input[type="password"],
+    .aw-authenticate input[type="number"],
+    .aw-authenticate input[type="tel"],
+    .aw-authenticate select {
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        height: 42px;
+        padding: 3px 9px;
+        font-size: 14px;
+        border: solid 1px #CCC;
+        -ms-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* Opera/IE 8+ */
+        /*margin-bottom: 5%;*/
+    }
+input[name=personalId], input[name=password] {
+    margin-bottom: 0; /* removed important as its affecting other screens*/
+}
+.aw-authenticate input[type="text"].error,
+.aw-authenticate input[type="password"].error,
+.aw-authenticate input[type="number"].error,
+.aw-authenticate input[type="tel"].error,
+.aw-authenticate select.error {
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(12,32,116,0.9), 0px 0px 0px 4px rgba(222,22,43,1);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(12,32,116,0.9), 0px 0px 0px 4px rgba(222,22,43,1);
+    box-shadow: 0px 0px 0px 1px rgba(12,32,116,0.9), 0px 0px 0px 4px rgba(222,22,43,1);
+}
+.aw-authenticate button {
+    /*margin-top: 15px;*/
+    font-weight: bold;
+    padding: 15px 0 15px;
+    white-space: normal;
+    font-size: 18px;
+    color: #000;
+    background: #FFF;
+    border: solid 1px #000;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    /*margin-bottom: 10px;*/
+}
+    .aw-authenticate button:hover {
+        background: #EFEFEF;
+    }
+/* Text Components */
+.aw-authenticate a,
+.aw-authenticate p,
+.aw-authenticate h1,
+.aw-authenticate h2,
+.aw-authenticate h3,
+.aw-authenticate label {
+    color: #000;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+.aw-authenticate a {
+    font-size: 12px;
+}
+.aw-authenticate label {
+    /*margin: 15px 0 3px; affecting other screens*/
+    margin: 0px 0 3px; /* added to resolve the style issue*/
+    float: left;
+    clear: both;
+}
+    .aw-authenticate label#aw-remember-my-id-label,
+    .aw-authenticate label#aw-remember-my-id-label-global {
+        font-size: 12px;
+        position: relative;
+        z-index: 9;
+    }
+.aw-authenticate a {
+    text-decoration: underline;
+}
+.aw-authenticate p {
+    margin-bottom: 10px;
+}
+    .aw-authenticate p.aw-disclosure {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 15px;
+    }
+.aw-authenticate h2,
+.aw-authenticate h1 {
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.aw-authenticate h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.aw-authenticate label {
+    float: left;
+    clear: both;
+}
+select::-ms-expand {
+    background-color: #fff;
+    border: none;
+}
+#customUI {
+    display: inline-block;
+}
+.aw-authenticate .error-backdrop p a { /*ADI-1522_ADI-1584*/
+    color: #007CBE;
+    font-weight: normal;
+    margin-right: 5px;
+    width: auto;
+    display: inline-block;
+}
+.aw-authenticate #aw-welcomeMessage {
+    display: none;
+}
+.aw-authenticate input + br {
+    display: none; /*remove multiple <br> tag from legacy html page and then remove this CSS */
+}
+.aw-authenticate a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #0950a0;
+}
+    .aw-authenticate a:hover {
+        text-decoration: none;
+    }
+    .aw-authenticate input:focus,
+    .aw-authenticate select:focus,
+    .aw-authenticate button:focus,
+    .aw-authenticate textarea:focus,
+    .aw-authenticate a:focus,
+    .aw-authenticate label:focus,
+    .layout__sidebar a:focus,
+    .Footer_Container a:focus {
+        outline: 2px solid #109cde !important;
+    }
+.aw-authenticate .Shield_Questions { /*style_changes_ADI-1579*/
+    text-align: left !important;
+    color: #287db0;
+    margin: 5px 0 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.iframeClass {
+    border: none !important;
+}
+#authenticatorheader {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+#aw-idshield-input {
+    margin-bottom: 20px;
+}
+div#sharedAuthstepUpContainer h1 {
+    font-size: 14px;
+    line-height: 18px;
+}
+div#sharedAuthstepUpContainer p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.cust_margin_bottom {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.cust_btn {
+    background: #007CBE;
+    border-radius: 5px;
+    padding: 9px 15px !important;
+    text-decoration: none !important;
+    color: #f9f1f1 !important;
+    cursor: pointer;
+    margin-bottom: 50px !important;
+    display: inline-block !important;
+    width: 200px !important;
+}
+button#aw-submit-otp {
+    margin-bottom: 10px;
+}
+label#aw-six-digit-code {
+    font-size: 14px;
+}
+li.forgetanswer_tesla, a.forgotpassword_tesla, a.forgotid_tesla, .rememberid_tesla, .disclosure_Tesla {
+    display: none;
+}
+label#aw-remember-my-id-label.rememberid_tesla, .form-control-placeholder, .form-control-pwdplaceholder, .form-control-lblplaceholder, .form-control-pinplaceholder, .Oauth_remember, .stepupheader_oauth, .Oauthheader_logintoccounts {
+    display: none !important;
+}
+/*IE show hide fix*/
+input::-ms-clear, input::-ms-reveal {
+    display: none !important;
+}
+/*Step Up Styles - In-session Step Up*/
+.sharedauth-modal-open #sharedAuthstepUpContainer {
+    padding: 45px 0 45px 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .sharedauth-modal-open #sharedAuthstepUpContainer h2.Shield_Questions {
+        padding-bottom: 25px !important;
+    }
+    .sharedauth-modal-open #sharedAuthstepUpContainer .contain-stepup.sharedauth ul {
+        padding: 0;
+        float: left;
+    }
+    .sharedauth-modal-open #sharedAuthstepUpContainer button#aw-submit-idshield {
+        float: left;
+    }
+    .sharedauth-modal-open #sharedAuthstepUpContainer li.forgetanswer_otherclients {
+        display: inline-block;
+    }
+.sharedauth-modal-open div#sharedAuthstepUpContainer h1, .sharedauth-modal-open div#sharedAuthstepUpContainer h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0 85px 25px 0;
+}
+/* END of Href-../../../../content/Shared/Styles/SharedAuthStyles/ShareAuthStepUpStyles/aw-base.css*/
+/* Original Href-../../../../content/Shared/Styles/SharedAuthStyles/ShareAuthStepUpStyles/SharedAuthStyles.css */
+body.sharedauth-modal-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  pointer-events: none;
+}
+body.sharedauth-modal-open .modal {
+  margin: 0 !important;
+}
+body.sharedauth-modal-open .modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  overflow: auto !important;
+  z-index: 9;
+}
+@media (max-width: 750px) {
+  body.sharedauth-modal-open .modal-dialog {
+    width: 100% !important;
+  }
+}
+@media (min-width: 751px) {
+  body.sharedauth-modal-open .modal-dialog {
+    width: 500px !important;
+    min-width: 500px;
+    margin-top: 30px !important;
+    bottom: initial;
+  }
+}
+body.sharedauth-modal-open .modal-content {
+  transform: none !important;
+  opacity: 1 !important;
+  max-height: initial !important;
+  top: 0;
+  min-height: 100%;
+  height: initial !important;
+  pointer-events: all;
+  border: solid 2px #5e5e5e;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 4px;
+}
+@media (max-width: 750px) {
+  body.sharedauth-modal-open .modal-content {
+    border: solid 2px #FFF;
+    border-radius: 0;
+  }
+}
+@media (min-width: 751px) {
+  body.sharedauth-modal-open .modal-content {
+    min-height: auto;
+  }
+}
+body.sharedauth-modal-open .modal-backdrop {
+  background-color: #000000;
+  opacity: 0.65;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/**
+    DE - SE: Card 73, 103 - Pilot User Login Screen changes - STARTS
+*/
+#txtPassword::-ms-reveal {
+  display: none;
+}
+#txtPassword {
+  font-size: 12px !important;
+}
+.showHideBtnBase, .contain-stepup.sharedauth.loginwidget .showHideBtn, .contain-stepup.sharedauth.authlogin .showHideBtn, .contain-stepup.sharedauth.loginwidgetgray .showHideBtn, .contain-stepup.sharedauth.tuxlogin .showHideBtn {
+  cursor: pointer !important;
+  background: #fff !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 12px !important;
+  position: relative;
+  float: right;
+  height: 25px !important;
+  width: 44px !important;
+  color: #007CBE !important;
+  padding: 0 0 0 7px !important;
+  margin: 0 !important;
+  line-height: 0;
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  font-weight: 400 !important;
+}
+.showHideBtnBase:focus, .contain-stepup.sharedauth.loginwidget .showHideBtn:focus, .contain-stepup.sharedauth.authlogin .showHideBtn:focus, .contain-stepup.sharedauth.loginwidgetgray .showHideBtn:focus, .contain-stepup.sharedauth.tuxlogin .showHideBtn:focus {
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  text-decoration: none !important;
+}
+.showHideBtnShadowBase, .contain-stepup.sharedauth.loginwidget button#btnShow, .contain-stepup.sharedauth.authlogin button#btnShow, .contain-stepup.sharedauth.loginwidgetgray button#btnShow, .contain-stepup.sharedauth.tuxlogin button#btnShow {
+  border: none !important;
+  box-shadow: 0px 0px 0px 2px transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px transparent;
+  -mox-box-shadow: 0px 0px 0px 2px transparent;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.showHideBtnShadowBase:focus, .contain-stepup.sharedauth.loginwidget button#btnShow:focus, .contain-stepup.sharedauth.authlogin button#btnShow:focus, .contain-stepup.sharedauth.loginwidgetgray button#btnShow:focus, .contain-stepup.sharedauth.tuxlogin button#btnShow:focus {
+  box-shadow: none !important;
+}
+.showHideBtnShadowBase:hover, .contain-stepup.sharedauth.loginwidget button#btnShow:hover, .contain-stepup.sharedauth.authlogin button#btnShow:hover, .contain-stepup.sharedauth.loginwidgetgray button#btnShow:hover, .contain-stepup.sharedauth.tuxlogin button#btnShow:hover {
+  background: #fff !important;
+  text-decoration: none !important;
+}
+/**
+    DE - SE: Card 73, 103 - Pilot User Login Screen changes - ENDS
+*/
+.contain-stepup.sharedauth {
+  background: #FFF;
+  height: initial;
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 751px) {
+  .contain-stepup.sharedauth {
+    min-height: initial;
+    position: relative;
+    /*fix for d22175*/
+    height: 100%;
+  }
+}
+.contain-stepup.sharedauth * {
+  font-family: 'Helvetica neue', 'Helvetica', 'Arial', Sans-serif;
+  color: #333333;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-tap-highlight-color: none;
+  text-align: left;
+}
+.contain-stepup.sharedauth hr {
+  border: solid 1px #333;
+  padding: 0 5px;
+}
+.contain-stepup.sharedauth h1, .contain-stepup.sharedauth h2, .contain-stepup.sharedauth h3 {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 28px !important;
+  line-height: 32px !important;
+  color: #0C2074;
+  margin: 0;
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth h1, .contain-stepup.sharedauth h2, .contain-stepup.sharedauth h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+.contain-stepup.sharedauth h1:focus, .contain-stepup.sharedauth h2:focus, .contain-stepup.sharedauth h3:focus {
+  outline: none;
+}
+.contain-stepup.sharedauth p, .contain-stepup.sharedauth label {
+  font-family: 'HelveticaNeue', sans-serif;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-size: 14px;
+}
+.contain-stepup.sharedauth p {
+  margin: 35px 0 15px;
+}
+.contain-stepup.sharedauth p:last-of-type {
+  margin: 0;
+}
+.contain-stepup.sharedauth label {
+  font-weight: bold;
+  line-height: 24px;
+  display: block;
+}
+.contain-stepup.sharedauth a {
+    text-decoration: underline;
+    color: #007CBE;
+    font-size: inherit;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contain-stepup.sharedauth a:focus {
+  color: #044E7C;
+  outline: none;
+}
+.contain-stepup.sharedauth a:hover {
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+    .contain-stepup.sharedauth a {
+    display: block;
+  }
+}
+.contain-stepup.sharedauth ul {
+  margin: 0;
+  border: none;
+  /*defect fix 22249*/
+  clear: both;
+}
+.contain-stepup.sharedauth ul li {
+  list-style: none;
+  padding-right: 20px;
+  margin: 10px 0 0;
+  font-size: 15px;
+  border: none;
+  line-height: 20px;
+}
+.contain-stepup.sharedauth ul li.startover {
+  display: none;
+}
+.contain-stepup.sharedauth div:focus {
+  outline: none;
+}
+.contain-stepup.sharedauth button {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+  background-color: #007CBE;
+  border-radius: 5px;
+  border: solid 1px #007CBE;
+  height: 44px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: text;
+  -webkit-user-select: text;
+  font-weight: bold;
+  padding: 0 50px;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.contain-stepup.sharedauth button * {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.contain-stepup.sharedauth button:hover {
+  background-color: #044E7C;
+  /*defect fix #20026*/
+  border: solid 1px #044E7C;
+}
+.contain-stepup.sharedauth button:focus {
+  text-decoration: underline;
+  border: solid 1px #FFF;
+  box-shadow: 0 0 0 2px #044E7C;
+  background-color: #044E7C;
+  outline: none;
+}
+.contain-stepup.sharedauth button:focus:hover {
+  border: solid 1px #FFF;
+}
+.contain-stepup.sharedauth button:disabled {
+  background-color: #a1a1a1;
+  color: #fff;
+  cursor: default;
+  border: solid 1px #a1a1a1;
+}
+.contain-stepup.sharedauth button.aw-secondary {
+  background-color: #FFF;
+  color: #007CBE;
+  border: solid 2px #007CBE;
+}
+.contain-stepup.sharedauth button.aw-secondary:hover {
+  color: #FFF;
+  border: solid 1px #044E7C;
+  background-color: #044E7C; /* FF is not picking up the button:hover background color.  Being explicit here.*/
+}
+.contain-stepup.sharedauth button.aw-secondary:focus {
+  color: #FFF;
+  text-decoration: underline;
+  border: solid 1px #044E7C;
+  box-shadow: 0 0 0 1px #FFF, 0 0 0 3px #044e7c;
+  outline: none;
+    background-color: #044E7C; /* FF is not picking up the button:hover background color.  Being explicit here.*/
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button:last-of-type {
+    margin: 0 0 15px;
+  }
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button:first-of-type {
+    margin: 15px 0;
+  }
+}
+.contain-stepup.sharedauth button.close {
+  border: none;
+  background: none;
+  z-index: 12;
+  padding: 0;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+.contain-stepup.sharedauth button.close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #127dbc;
+}
+.contain-stepup.sharedauth button.close * {
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+.contain-stepup.sharedauth input {
+  font-size: 14px;
+  color: #555;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: solid 1px #999;
+  outline: none;
+  margin: 0 0 5px;
+  display: block;
+  background: #FFF;
+  cursor: text;
+}
+.contain-stepup.sharedauth input:invalid {
+    box-shadow: none;
+}
+.contain-stepup.sharedauth input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #42B9F0;
+  border: solid 1px #0C2074;
+  padding: 10px;
+  margin: 0 0 5px;
+  height: 40px;
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth input {
+    width: 100% !important;
+    position: initial;
+  }
+}
+.contain-stepup.sharedauth .btn-wrap {
+  margin: 20px 0;
+}
+.contain-stepup.sharedauth .btn-wrap p {
+  display: inline-block;
+}
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth .btn-wrap {
+    margin: 0;
+  }
+  .contain-stepup.sharedauth .btn-wrap p {
+    margin: 0 0 15px;
+  }
+}
+.contain-stepup.sharedauth .error {
+  color: #C00D1D;
+  margin: 10px 0;
+  border: none;
+  font-weight: bold;
+}
+.contain-stepup.sharedauth .error a {
+  color: #C00D1D;
+  text-decoration: underline;
+  display: inline;
+}
+.contain-stepup.sharedauth .error a:focus {
+  color: #A70F1E;
+  outline: solid 1px #A70F1E;
+}
+.contain-stepup.sharedauth .error.general {
+  margin: 20px;
+}
+.contain-stepup.sharedauth .alert {
+  margin: 0 auto;
+  max-width: 280px;
+}
+.contain-stepup.sharedauth .alert p, .contain-stepup.sharedauth .alert .p {
+  text-align: left;
+  padding: 0 0 0 40px;
+}
+.contain-stepup.sharedauth .icon {
+  transform: none;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 3px;
+  background: none;
+}
+.contain-stepup.sharedauth .login-transmit {
+  display: none;
+}
+.contain-stepup.sharedauth .login-transmit-show {
+  display: none;
+}
+.contain-stepup.sharedauth .keypad-contain {
+  min-height: 200px;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 751px) {
+  .contain-stepup.sharedauth .keypad-contain {
+    display: none;
+  }
+}
+.contain-stepup.sharedauth .authenticator-header {
+  padding: 45px 85px 45px 45px;
+}
+.contain-stepup.sharedauth .authenticator-body {
+  padding: 0 45px 45px;
+}
+.contain-stepup.sharedauth .authenticator-footer {
+  padding: 0 45px 45px;
+}
+.contain-stepup.sharedauth .authenticator-footer p.otp-footer {
+  display: block;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  color: #000 !important;
+  font-weight: 400 !important;
+  margin-top: 10px !important;
+  font-style: normal;
+}
+.contain-stepup.sharedauth .stepup_load_spinner {
+  background: url("data:image/gif;base64,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");
+  position: fixed;
+  z-index: 999;
+  height: 1.5em;
+  width: 1.5em;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.contain-stepup.sharedauth .xmuiProgressForm {
+  height: 30px;
+}
+.contain-stepup.sharedauth .xmuiProgressForm span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 45px 0 0 35px;
+  font-size: 14px;
+}
+@media (max-width: 750px) {
+  .ews-stepup .sharedauth-omni.modal-dialog {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0;
+    height: 100% !important;
+  }
+}
+@media (min-width: 751px) {
+  .ews-stepup .sharedauth-omni.modal-dialog {
+    width: 500px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    margin-top: 30px !important;
+    padding: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: initial !important;
+  }
+}
+@media (min-width: 768px) {
+  .ui-mobile .ews-stepup .sharedauth-omni.modal-dialog {
+    /*fix for ipad overlay d22175*/
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    z-index: 1000;
+    height: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+/*defect fix 19668,19673*/
+#stepupandroidsubmitbutton.login-button {
+  height: 44px;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 44px !important;
+  display: inline-block;
+}
+.ui-dialog.infoDialog.timeoutPosition {
+  z-index: 100001 !important;
+  pointer-events: auto !important;
+}
+.fade {
+  background: rgba(0, 0, 0, 0.5);
+}
+.transfersContainer .tabContainer * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+#StepUpAssistance .customButton {
+  background-color: #007CBE;
+  /*defect fix 20026*/
+  border: #007CBE;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 17px;
+  height: 44px;
+  margin: 2% 0 0;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 25%;
+  cursor: pointer;
+}
+#StepUpAssistance .confirmation {
+  background: none repeat scroll 0 0 #f6fdf3;
+  border: 1px solid #1e850a;
+  margin-top: 0;
+  padding: 13px 15px;
+  width: 100%;
+  color: #21890D;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 21px;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+#StepUpAssistance .confirmation span.icon-success {
+  margin-right: 15px;
+  background-position: -265px -8px;
+  width: 21px;
+  height: 21px;
+  display: block;
+  vertical-align: middle;
+  float: left;
+}
+#StepUpAssistance .errorContainer {
+  background: none repeat scroll 0 0 #fee4e5;
+  border: 1px solid #ee0101;
+  margin-top: 0;
+  padding: 13px 15px;
+  width: 100%;
+  color: #9c0010;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 21px;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+#StepUpAssistance .errorContainer span.error-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+.contain-stepup.sharedauth.loginwidget {
+  height: 100%;
+  width: 100%;
+  clear: both;
+  background: #0c2074;
+  color: #FFF;
+  position: absolute;
+  font-family: Helvetica "Neue", sans-serif;
+  border-radius: 15px;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  padding: 5% 10%;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+.contain-stepup.sharedauth.loginwidget .login-transmit-hide {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidget .xmuiProgressForm span {
+  padding: 95px 0 0 35px;
+  font-size: 14px;
+}
+.contain-stepup.sharedauth.loginwidget .lw-AuthBody_Lock_Icon {
+  margin-right: 10px;
+}
+.contain-stepup.sharedauth.loginwidget .tux-Password-image {
+  height: 70px;
+  width: 100px;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 13px;
+}
+.contain-stepup.sharedauth.loginwidget .tux-floatLeft {
+  float: left;
+}
+.contain-stepup.sharedauth.loginwidget .tux-Password-Phrase {
+  line-height: 28px;
+  font-size: 17px;
+  color: #333333;
+  font-weight: normal;
+}
+.contain-stepup.sharedauth.loginwidget .login-transmit {
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidget .login-transmit h2, .contain-stepup.sharedauth.loginwidget .login-transmit h3 {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 5px 0 15px;
+}
+.contain-stepup.sharedauth.loginwidget .login-transmit.transmit-disclosure {
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFF;
+  font-weight: 400;
+}
+.contain-stepup.sharedauth.loginwidget .login-transmit-show {
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidget .lw-AuthLoginIcon {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.loginwidget .nvda-inlineblk div {
+  float: initial;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-header, .contain-stepup.sharedauth.loginwidget .authenticator-body, .contain-stepup.sharedauth.loginwidget .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+.contain-stepup.sharedauth.loginwidget .lw-vs20.lw-placeholderIe8.lw-marginBottom18.lw-floatLeft {
+  width: 100%;
+}
+.contain-stepup.sharedauth.loginwidget .form-group.image-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+.contain-stepup.sharedauth.loginwidget div#imgSound {
+  left: 75px;
+  top: 45px;
+  position: absolute;
+}
+.contain-stepup.sharedauth.loginwidget .lw-vs8.lw-passwordImagePhrase.lw-floatLeft {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-footer p {
+  margin: 2% 0 0;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-footer p.otp-footer {
+  color: #FFF !important;
+}
+.contain-stepup.sharedauth.loginwidget h1, .contain-stepup.sharedauth.loginwidget h2, .contain-stepup.sharedauth.loginwidget h3, .contain-stepup.sharedauth.loginwidget p, .contain-stepup.sharedauth.loginwidget span, .contain-stepup.sharedauth.loginwidget label, .contain-stepup.sharedauth.loginwidget a, .contain-stepup.sharedauth.loginwidget button {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.loginwidget h1, .contain-stepup.sharedauth.loginwidget h2, .contain-stepup.sharedauth.loginwidget h3 {
+  font-weight: 600;
+}
+.contain-stepup.sharedauth.loginwidget span, .contain-stepup.sharedauth.loginwidget a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF !important;
+}
+.contain-stepup.sharedauth.loginwidget a {
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.loginwidget a:hover {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF !important;
+}
+.contain-stepup.sharedauth.loginwidget p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  margin: 5px auto;
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidget p.error {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #FFF;
+  float: left;
+}
+.contain-stepup.sharedauth.loginwidget h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.contain-stepup.sharedauth.loginwidget h1.new-UX-header {
+  margin: 0 0 20px;
+}
+.contain-stepup.sharedauth.loginwidget label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+  width: 100%;
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidget .btn-wrap {
+  margin: 0;
+}
+.contain-stepup.sharedauth.loginwidget button, .contain-stepup.sharedauth.loginwidget .btn {
+  background: #d74150 !important;
+  font-weight: bold !important;
+  white-space: normal;
+  font-size: 18px !important;
+  line-height: 28px;
+  color: #fff !important;
+  border: solid 1px #d74150 !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+  clear: both;
+  text-decoration: none;
+  margin: 5% auto 0;
+  padding: 7px 0;
+  height: 42px !important;
+}
+.contain-stepup.sharedauth.loginwidget button:hover, .contain-stepup.sharedauth.loginwidget .btn:hover {
+  background: #EF3A50 !important;
+}
+.contain-stepup.sharedauth.loginwidget button:focus, .contain-stepup.sharedauth.loginwidget .btn:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #d74150 !important;
+  -moz-box-shadow: 0 0 1px 2px #d74150 !important;
+  box-shadow: 0 0 1px 2px #d74150 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.loginwidget button.secondary, .contain-stepup.sharedauth.loginwidget button.idshieldlink, .contain-stepup.sharedauth.loginwidget .btn.secondary, .contain-stepup.sharedauth.loginwidget .btn.idshieldlink {
+  color: #d74150;
+  border: solid 1px #d74150;
+  background: #FFF;
+}
+.contain-stepup.sharedauth.loginwidget button.secondary:hover, .contain-stepup.sharedauth.loginwidget button.idshieldlink:hover, .contain-stepup.sharedauth.loginwidget .btn.secondary:hover, .contain-stepup.sharedauth.loginwidget .btn.idshieldlink:hover {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.loginwidget button.secondary:focus, .contain-stepup.sharedauth.loginwidget .btn.secondary:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #d74150 !important;
+  -moz-box-shadow: 0 0 1px 2px #d74150 !important;
+  box-shadow: 0 0 1px 2px #d74150 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.loginwidget input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.contain-stepup.sharedauth.loginwidget input:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #109cde !important;
+  -moz-box-shadow: 0 0 1px 2px #109cde !important;
+  box-shadow: 0 0 1px 2px #109cde !important;
+}
+.contain-stepup.sharedauth.loginwidget hr {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .lw-vs20 {
+  margin-top: 0;
+  padding-top: 0 !important;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+  display: block;
+  font-style: normal;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password p.error {
+  margin: 2% 0 0 0;
+  font-size: 14px;
+  color: #FFF;
+  line-height: 18px;
+  float: left;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap {
+  margin: 0;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap button {
+  margin-bottom: 5%;
+}
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap .lw-AuthForgotId a:hover {
+  padding-top: 0 !important;
+}
+.contain-stepup.sharedauth.loginwidget .showHideBtn {
+  top: -38px;
+  right: 10px;
+  font-size: 14px !important;
+}
+.contain-stepup.sharedauth.loginwidget #txtPassword {
+  font-size: 14px !important;
+}
+.contain-stepup.sharedauth.authlogin {
+  clear: both;
+  float: left;
+  overflow: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 325px;
+  height: 330px;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+.contain-stepup.sharedauth.authlogin:focus {
+  outline: none;
+}
+.contain-stepup.sharedauth.authlogin .login-transmit-hide {
+  display: none;
+}
+.contain-stepup.sharedauth.authlogin .xmuiProgressForm span {
+  position: absolute;
+  top: 52px;
+  left: 40px;
+  color: #000;
+  font-size: 14px !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+}
+.contain-stepup.sharedauth.authlogin .login-transmit {
+  display: block;
+}
+.contain-stepup.sharedauth.authlogin .login-transmit h2, .contain-stepup.sharedauth.authlogin .login-transmit h3 {
+  color: #287db0;
+  font-size: 14px;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 5px 0;
+}
+.contain-stepup.sharedauth.authlogin .login-transmit.transmit-disclosure {
+  font-size: 10px;
+  line-height: 12px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.contain-stepup.sharedauth.authlogin .login-transmit-show {
+  display: block;
+}
+.contain-stepup.sharedauth.authlogin a.login-transmit-show {
+  display: inline;
+}
+.contain-stepup.sharedauth.authlogin .transmit-error-contain {
+  float: left;
+  width: 100%;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-header, .contain-stepup.sharedauth.authlogin .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body {
+  position: relative;
+  display: block;
+  width: 325px;
+  height: 290px;
+  padding: 10px 20px 0 60px;
+  border-right: 1px solid #e2e2e2;
+  overflow: auto;
+  box-sizing: border-box;
+  max-height: 290px;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-footer {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  right: 25px;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-footer p.otp-footer {
+  font-size: 8px;
+  line-height: 10px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+.contain-stepup.sharedauth.authlogin .authlogin-footer {
+  position: absolute;
+  bottom: 0;
+}
+.contain-stepup.sharedauth.authlogin h1, .contain-stepup.sharedauth.authlogin h2, .contain-stepup.sharedauth.authlogin h3, .contain-stepup.sharedauth.authlogin p, .contain-stepup.sharedauth.authlogin span, .contain-stepup.sharedauth.authlogin label, .contain-stepup.sharedauth.authlogin a, .contain-stepup.sharedauth.authlogin button {
+  color: #000;
+  letter-spacing: initial;
+}
+.contain-stepup.sharedauth.authlogin h1, .contain-stepup.sharedauth.authlogin h2, .contain-stepup.sharedauth.authlogin h3 {
+  font-weight: 600;
+}
+.contain-stepup.sharedauth.authlogin span, .contain-stepup.sharedauth.authlogin a {
+  font-weight: 400;
+  font-size: 14px;
+}
+.contain-stepup.sharedauth.authlogin a {
+  color: #0950a0;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.authlogin a:focus {
+  outline: 1px dotted black !important;
+}
+.contain-stepup.sharedauth.authlogin p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  font-style: normal;
+  margin: 5px auto;
+  font-family: sans-serif;
+  padding: 0 20px 0 60px;
+  position: absolute;
+  bottom: 0;
+}
+.contain-stepup.sharedauth.authlogin p.aboutotp {
+  font-size: 11px;
+  line-height: 14px;
+}
+.contain-stepup.sharedauth.authlogin p.error {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+  color: red;
+  float: left;
+  line-height: 14px;
+}
+.contain-stepup.sharedauth.authlogin p.device-error {
+  margin: 13px 0 0 13px;
+  font-size: 12px;
+  color: red;
+}
+.contain-stepup.sharedauth.authlogin h1 {
+  color: #287db0;
+  font-size: 14px;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 5px 0 10px;
+  padding: 12px 20px 0 60px;
+}
+.contain-stepup.sharedauth.authlogin label {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  font-style: normal;
+  padding: 0 0 0 60px;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  line-height: 20px;
+}
+.contain-stepup.sharedauth.authlogin ul.mobile-list {
+  height: 120px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 0;
+}
+.contain-stepup.sharedauth.authlogin ul.mobile-list li {
+  margin-top: 10px;
+}
+.contain-stepup.sharedauth.authlogin .btn-wrap {
+  margin: 15px 0 0;
+  display: inline-block;
+}
+.contain-stepup.sharedauth.authlogin .btn-wrap p {
+  margin: 0 auto;
+}
+.contain-stepup.sharedauth.authlogin .btn-wrap a {
+  line-height: 50px;
+}
+.contain-stepup.sharedauth.authlogin button {
+  background: linear-gradient(to top, #0950a0 0%, #2b85bb 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#2b85bb', endColorstr='#0950a0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b85bb), color-stop(100%, #0950a0)) !important;
+  background: -webkit-linear-gradient(top, #2b85bb 0%, #0950a0 100%) !important;
+  border: 1px solid #0950a0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+  width: auto;
+  height: 50px;
+  box-shadow: none;
+  /**float: left;**/
+  margin: 0 15px 0 0;
+  position: relative;
+  left: 60px;
+}
+.contain-stepup.sharedauth.authlogin button:hover {
+  background: linear-gradient(to top, #2b85bb 0%, #0950a0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0950a0', endColorstr='#2b85bb') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0950a0), color-stop(100%, #2b85bb)) !important;
+  background: -webkit-linear-gradient(top, #0950a0 0%, #2b85bb 100%) !important;
+}
+.contain-stepup.sharedauth.authlogin button.secondary {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#f0f0f0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%) !important;
+  border-radius: 4px !important;
+  font-size: 13px !important;
+  outline: medium none !important;
+  color: #0C2074 !important;
+  border: 1px solid #cdcdcd !important;
+}
+.contain-stepup.sharedauth.authlogin button.secondary:hover {
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#ffffff') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #ffffff)) !important;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 100%) !important;
+}
+.contain-stepup.sharedauth.authlogin button:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0950a0 !important;
+  -moz-box-shadow: 0 0 2px 1px #0950a0 !important;
+  box-shadow: 0 0 2px 1px #0950a0 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.authlogin .sa-secondary {
+  background: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#f0f0f0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%) !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  color: #0C2074 !important;
+  cursor: pointer;
+  font-size: 14px !important;
+  outline: none;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+  width: auto;
+  height: 50px;
+  border: 1px solid #cdcdcd !important;
+  box-shadow: none;
+  margin: 0;
+  text-decoration: none;
+}
+.contain-stepup.sharedauth.authlogin .sa-secondary:hover {
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#ffffff') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #ffffff)) !important;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 100%) !important;
+}
+.contain-stepup.sharedauth.authlogin .sa-secondary:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0950a0 !important;
+  -moz-box-shadow: 0 0 2px 1px #0950a0 !important;
+  box-shadow: 0 0 2px 1px #0950a0 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.authlogin input {
+  border: 1px solid #cdcdcd !important;
+  padding: 0 0 0 5px !important;
+  width: 195px !important;
+  color: #666666;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  outline: none;
+  box-shadow: none !important;
+  border-radius: 2px !important;
+  background: #FFF;
+  position: relative;
+  left: 60px;
+}
+.contain-stepup.sharedauth.authlogin input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #109cde !important;
+  -moz-box-shadow: 0px 0px 0px 2px #109cde !important;
+  box-shadow: 0px 0px 0px 2px #109cde !important;
+}
+.contain-stepup.sharedauth.authlogin hr {
+  display: none;
+}
+.contain-stepup.sharedauth.authlogin .lw-Lock_Icon {
+  margin: 20px 10px 0 20px;
+}
+.contain-stepup.sharedauth.authlogin .lw-AuthLoginIcon {
+  font-size: 24px;
+  line-height: 20px;
+  color: #0c2074;
+  font-weight: normal;
+  padding-top: 20px;
+}
+.contain-stepup.sharedauth.authlogin .lw-AuthForgotId a {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: text;
+  -webkit-user-select: text;
+  /*padding: 15px;*/
+  cursor: pointer;
+  font-size: 14px !important;
+  /*outline: none;*/
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  /*height: 50px;*/
+  box-shadow: none;
+  margin: 20px 15px 0 0;
+  width: auto;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.authlogin .lw-AuthForgotId a:hover {
+  padding: 0 !important;
+  text-decoration: underline !important;
+  margin: 20px 15px 0 0;
+}
+.contain-stepup.sharedauth.authlogin #imgSound.sound_img {
+  cursor: pointer !important;
+  position: absolute;
+  top: 34px;
+  left: 112px;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .lw-passwordImage {
+  margin: 0 10px 0 0;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .btn-wrap {
+  float: left;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .btn-wrap button {
+  width: 100px !important;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .lw-PadTop20 {
+  float: left;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password #ForgetAns {
+  float: left;
+  line-height: initial;
+  margin: 10px 0 0 0;
+}
+.contain-stepup.sharedauth.authlogin .showHideBtn {
+  top: -32px;
+  right: 5px;
+}
+.contain-stepup.sharedauth.authlogin .lw-passwordScreenHeight {
+  height: 80px;
+}
+.contain-stepup.sharedauth.loginwidgetgray {
+  width: 228px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  background: linear-gradient(to bottom, #efefef 0%, #efefef 100%);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#F2F2F2');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F2F2F2), color-stop(100%, #F2F2F2));
+  background: -webkit-linear-gradient(top, #F2F2F2 0%, #F2F2F2 100%);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  height: 290px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: static;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit-hide {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit {
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit h1, .contain-stepup.sharedauth.loginwidgetgray .login-transmit h2, .contain-stepup.sharedauth.loginwidgetgray .login-transmit h3 {
+  font-size: 12px;
+  color: #0c2074;
+  font-weight: bold;
+  line-height: 14px;
+  margin: 5px 0 10px;
+}
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit.transmit-disclosure {
+  font-size: 8px;
+  line-height: 10px;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+}
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit-show {
+  display: block;
+}
+.contain-stepup.sharedauth.loginwidgetgray .mobile-list {
+  overflow: auto;
+  height: 110px;
+  margin-top: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-header, .contain-stepup.sharedauth.loginwidgetgray .authenticator-body, .contain-stepup.sharedauth.loginwidgetgray .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray h2, .contain-stepup.sharedauth.loginwidgetgray h3, .contain-stepup.sharedauth.loginwidgetgray p, .contain-stepup.sharedauth.loginwidgetgray span, .contain-stepup.sharedauth.loginwidgetgray label, .contain-stepup.sharedauth.loginwidgetgray a, .contain-stepup.sharedauth.loginwidgetgray button {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray h2, .contain-stepup.sharedauth.loginwidgetgray h3 {
+  font-weight: 600;
+}
+.contain-stepup.sharedauth.loginwidgetgray span, .contain-stepup.sharedauth.loginwidgetgray a {
+  color: #0C2074 !important;
+  font-size: 12px !important;
+  font-style: normal;
+  margin: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray span {
+  text-decoration: none !important;
+}
+.contain-stepup.sharedauth.loginwidgetgray a, .contain-stepup.sharedauth.loginwidgetgray a:hover {
+  padding: 0;
+  margin: 10px 0 0;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 14px;
+}
+.contain-stepup.sharedauth.loginwidgetgray p {
+  font-size: 12px;
+  font-weight: normal !important;
+  line-height: 16px;
+  color: #333333;
+  margin: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray p.error {
+  position: static;
+  margin: 5px 0 0 0;
+  font-size: 10px;
+  color: red;
+  float: left;
+  line-height: 11px;
+}
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray label {
+  font-size: 12px;
+  color: #0c2074;
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray label {
+  margin: 10px 0 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray .lw-placeholderIe8 {
+  width: 100%;
+}
+.contain-stepup.sharedauth.loginwidgetgray .lw-AuthBody_Lock_Icon.lw-Lock_Icon {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidgetgray .lw-marBottom7 {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidgetgray div#imgSound {
+  position: absolute;
+  top: 30px;
+  left: 72px;
+}
+.contain-stepup.sharedauth.loginwidgetgray .btn-wrap {
+  margin: 5px 0 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray button, .contain-stepup.sharedauth.loginwidgetgray .btn {
+  background: linear-gradient(to top, #BDBDBD 0%, #F2F2F2 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#BDBDBD') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F2F2F2), color-stop(100%, #BDBDBD)) !important;
+  background: -webkit-linear-gradient(top, #F2F2F2 0%, #BDBDBD 100%) !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  color: #0C2074 !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold !important;
+  border: 1px solid #aeadad !important;
+  width: 130px !important;
+  height: 28px !important;
+  outline: 0 none !important;
+  box-shadow: 0 2px 2px #b7b7b7;
+  text-align: center;
+  padding: 5px 30px !important;
+  margin-right: 15px !important;
+}
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray button.secondary, .contain-stepup.sharedauth.loginwidgetgray button.idshieldlink:hover, .contain-stepup.sharedauth.loginwidgetgray button.secondary:hover, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray .btn.secondary, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink:hover, .contain-stepup.sharedauth.loginwidgetgray .btn.secondary:hover {
+  border: none !important;
+  box-shadow: none;
+  background: none !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  font-style: normal;
+  width: initial !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+}
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray button#otpResend, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray .btn#otpResend {
+  display: inline-block;
+  height: initial !important;
+  margin: 0;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink:focus, .contain-stepup.sharedauth.loginwidgetgray button#otpResend:focus, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink:focus, .contain-stepup.sharedauth.loginwidgetgray .btn#otpResend:focus {
+  outline: none !important;
+  border: 1px solid #aeadad !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.contain-stepup.sharedauth.loginwidgetgray button:focus, .contain-stepup.sharedauth.loginwidgetgray .btn:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0C2074 !important;
+  -moz-box-shadow: 0 0 2px 1px #0C2074 !important;
+  box-shadow: 0 0 2px 1px #0C2074 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.loginwidgetgray input {
+  border-radius: 4px;
+  padding: 5px;
+  color: #736f6e;
+  background-color: #ffffff;
+  box-shadow: 0 25px 1em -27px #999999 inset !important;
+  outline: none;
+  border: solid 1px #888 !important;
+  font-size: 1em;
+  cursor: text;
+  width: 90%;
+  margin: 0;
+  height: 23px;
+}
+.contain-stepup.sharedauth.loginwidgetgray input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #109cde !important;
+  -moz-box-shadow: 0px 0px 0px 2px #109cde !important;
+  box-shadow: 0px 0px 0px 2px #109cde !important;
+  border: solid 1px #FFF !important;
+}
+.contain-stepup.sharedauth.loginwidgetgray ul li {
+  list-style: none;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 15px;
+  border: none;
+}
+.contain-stepup.sharedauth.loginwidgetgray hr {
+  display: none;
+}
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password .lw-passwordImage {
+  margin: 0 10px 0 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password label {
+  font-style: normal;
+  margin: 0;
+}
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password input {
+  margin: 0 0 15px;
+}
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password p.error {
+  margin: 0 0 5px;
+  width: 100%;
+}
+.contain-stepup.sharedauth.loginwidgetgray .showHideBtn {
+  top: -34.5px;
+  right: 2px;
+  height: 16px !important;
+  box-shadow: 0 23px 1em -29px #999999 inset !important;
+  -webkit-appearance: none !important;
+}
+.contain-stepup.sharedauth.tuxlogin {
+  font-family: "Helvetica Neue", Open Sans, sans-serif;
+  color: white;
+  background: #074080;
+  background: -moz-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -webkit-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -o-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -ms-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  border-radius: 0;
+  padding: 105px 50px 0;
+  /** DE-SE Card 226: TUX Log In Button to move up in Password screen **/
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+.contain-stepup.sharedauth.tuxlogin * {
+  color: #FFF;
+}
+.contain-stepup.sharedauth.tuxlogin h1, .contain-stepup.sharedauth.tuxlogin h2, .contain-stepup.sharedauth.tuxlogin h3, .contain-stepup.sharedauth.tuxlogin label, .contain-stepup.sharedauth.tuxlogin p, .contain-stepup.sharedauth.tuxlogin a, .contain-stepup.sharedauth.tuxlogin .btn-wrap {
+  text-align: center;
+}
+.contain-stepup.sharedauth.tuxlogin .login-transmit-hide {
+  display: none;
+}
+.contain-stepup.sharedauth.tuxlogin div.new-UX-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 85px;
+  background: #0d427e;
+  padding: 34px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contain-stepup.sharedauth.tuxlogin div.new-UX-header img {
+  width: 92px;
+  height: 23px;
+  display: block;
+  margin: 0 auto;
+}
+.contain-stepup.sharedauth.tuxlogin .login-transmit h1, .contain-stepup.sharedauth.tuxlogin .login-transmit h2, .contain-stepup.sharedauth.tuxlogin .login-transmit h3 {
+  margin: 5px auto 0;
+}
+.contain-stepup.sharedauth.tuxlogin form.transmit-qa {
+  text-align: center;
+}
+.contain-stepup.sharedauth.tuxlogin .transmit-password label {
+  text-align: left;
+  float: left;
+}
+.contain-stepup.sharedauth.tuxlogin p, .contain-stepup.sharedauth.tuxlogin .authenticator-footer p {
+  margin: 0 auto;
+}
+.contain-stepup.sharedauth.tuxlogin a, .contain-stepup.sharedauth.tuxlogin .authenticator-footer a {
+  margin: 10px auto;
+  width: initial;
+}
+.contain-stepup.sharedauth.tuxlogin a:focus, .contain-stepup.sharedauth.tuxlogin .authenticator-footer a:focus {
+  border: none;
+  outline: solid 1px #FFF !important;
+}
+.contain-stepup.sharedauth.tuxlogin input {
+  text-align: center;
+}
+.contain-stepup.sharedauth.tuxlogin .btn-wrap {
+  margin: 0;
+}
+.contain-stepup.sharedauth.tuxlogin button, .contain-stepup.sharedauth.tuxlogin button.btn, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink {
+  height: 44px;
+  background: #D83B48 !important;
+  border-radius: 2px !important;
+  font-weight: 900 !important;
+  color: #FFF;
+  border: solid 1px #D83B48 !important;
+  margin-top: 10px;
+}
+.contain-stepup.sharedauth.tuxlogin button:hover, .contain-stepup.sharedauth.tuxlogin button.btn:hover, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink:hover {
+  text-decoration: underline;
+  background: #D83B48 !important;
+}
+.contain-stepup.sharedauth.tuxlogin button:focus, .contain-stepup.sharedauth.tuxlogin button.btn:focus, .contain-stepup.sharedauth.tuxlogin .btn.secondary:focus {
+  outline: none !important;
+  border: solid 1px #D83B48 !important;
+  box-shadow: 0 0 1px 2px #D83B48 !important;
+  -moz-box-shadow: 0 0 1px 2px #D83B48 !important;
+  -webkit-box-shadow: 0 0 1px 2px #D83B48 !important;
+  text-decoration: underline;
+}
+.contain-stepup.sharedauth.tuxlogin .btn.secondary, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink {
+  color: #2a3942 !important;
+  background: #FFF !important;
+}
+.contain-stepup.sharedauth.tuxlogin ul {
+  margin: 15px auto;
+}
+.contain-stepup.sharedauth.tuxlogin ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media (orientation: landscape) {
+  .contain-stepup.sharedauth.tuxlogin .authenticator-body.transmit-password p.error {
+    margin: -3% 0 0 0;
+  }
+}
+.contain-stepup.sharedauth.tuxlogin .showHideBtn {
+  top: -38px;
+  right: 10px;
+  font-size: 14px !important;
+}
+.contain-stepup.sharedauth.tuxlogin #txtPassword {
+  font-size: 14px !important;
+}
+/*defect fix 22590*/
+#disablingDiv {
+  /* Do not display it on entry */
+  display: none;
+  /* Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page */
+  z-index: 1001;
+  /* make it cover the whole screen */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  /* make it white but fully transparent */
+  background-color: white;
+  opacity: .00;
+  filter: alpha(opacity=00);
+}
+/*# sourceMappingURL=SharedAuthStyles.css.map */
+/*Spinner Css Start*/
+#divLoading img {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  margin-top: -23px;
+}
+.sa__dot-loader-ie-lower {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: url("/USB/content/Shared/Styles/Images/ajax-loader.200734961.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.sa__dot-loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  height: 290px;
+  width: 230px;
+}
+div.sa__dot-loader div.loadingSpinner {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-left: -23px;
+  margin-top: -23px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+.sa__loader-ie-lower {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: url("data:image/gif;base64,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");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.sa__loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+div.sa__loader div.loadingSpinner {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-left: -23px;
+  margin-top: -23px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+div.loadingSpinner div.holder {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+div.loadingSpinner div[class^="bar"] {
+  width: 6%;
+  height: 16%;
+  background: #ffffff;
+  position: absolute;
+  left: 48%;
+  top: 43%;
+  opacity: 0;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-animation: fade 1s linear infinite;
+  -moz-animation: fade 1s linear infinite;
+  -o-animation: fade 1s linear infinite;
+  animation: fade 1s linear infinite;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+@-moz-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+@-o-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+div.loadingSpinner div.bar1 {
+  -webkit-transform: rotate(0deg) translate(0, -130%);
+  -moz-transform: rotate(0deg) translate(0, -130%);
+  -ms-transform: rotate(0deg) translate(0, -130%);
+  -o-transform: rotate(0deg) translate(0, -130%);
+  transform: rotate(0deg) translate(0, -130%);
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+div.loadingSpinner div.bar2 {
+  -webkit-transform: rotate(30deg) translate(0, -130%);
+  -moz-transform: rotate(30deg) translate(0, -130%);
+  -ms-transform: rotate(30deg) translate(0, -130%);
+  -o-transform: rotate(30deg) translate(0, -130%);
+  transform: rotate(30deg) translate(0, -130%);
+  -webkit-animation-delay: -0.9167s;
+  -moz-animation-delay: -0.9167s;
+  -o-animation-delay: -0.9167s;
+  animation-delay: -0.9167s;
+}
+div.loadingSpinner div.bar3 {
+  -webkit-transform: rotate(60deg) translate(0, -130%);
+  -moz-transform: rotate(60deg) translate(0, -130%);
+  -ms-transform: rotate(60deg) translate(0, -130%);
+  -o-transform: rotate(60deg) translate(0, -130%);
+  transform: rotate(60deg) translate(0, -130%);
+  -webkit-animation-delay: -0.833s;
+  -moz-animation-delay: -0.833s;
+  -o-animation-delay: -0.833s;
+  animation-delay: -0.833s;
+}
+div.loadingSpinner div.bar4 {
+  -webkit-transform: rotate(90deg) translate(0, -130%);
+  -moz-transform: rotate(90deg) translate(0, -130%);
+  -ms-transform: rotate(90deg) translate(0, -130%);
+  -o-transform: rotate(90deg) translate(0, -130%);
+  transform: rotate(90deg) translate(0, -130%);
+  -webkit-animation-delay: -0.7497s;
+  -moz-animation-delay: -0.7497s;
+  -o-animation-delay: -0.7497s;
+  animation-delay: -0.7497s;
+}
+div.loadingSpinner div.bar5 {
+  -webkit-transform: rotate(120deg) translate(0, -130%);
+  -moz-transform: rotate(120deg) translate(0, -130%);
+  -ms-transform: rotate(120deg) translate(0, -130%);
+  -o-transform: rotate(120deg) translate(0, -130%);
+  transform: rotate(120deg) translate(0, -130%);
+  -webkit-animation-delay: -0.667s;
+  -moz-animation-delay: -0.667s;
+  -o-animation-delay: -0.667s;
+  animation-delay: -0.667s;
+}
+div.loadingSpinner div.bar6 {
+  -webkit-transform: rotate(150deg) translate(0, -130%);
+  -moz-transform: rotate(150deg) translate(0, -130%);
+  -ms-transform: rotate(150deg) translate(0, -130%);
+  -o-transform: rotate(150deg) translate(0, -130%);
+  transform: rotate(150deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5837s;
+  -moz-animation-delay: -0.5837s;
+  -o-animation-delay: -0.5837s;
+  animation-delay: -0.5837s;
+}
+div.loadingSpinner div.bar7 {
+  -webkit-transform: rotate(180deg) translate(0, -130%);
+  -moz-transform: rotate(180deg) translate(0, -130%);
+  -ms-transform: rotate(180deg) translate(0, -130%);
+  -o-transform: rotate(180deg) translate(0, -130%);
+  transform: rotate(180deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5s;
+  -moz-animation-delay: -0.5s;
+  -o-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+div.loadingSpinner div.bar8 {
+  -webkit-transform: rotate(210deg) translate(0, -130%);
+  -moz-transform: rotate(210deg) translate(0, -130%);
+  -ms-transform: rotate(210deg) translate(0, -130%);
+  -o-transform: rotate(210deg) translate(0, -130%);
+  transform: rotate(210deg) translate(0, -130%);
+  -webkit-animation-delay: -0.4167s;
+  -moz-animation-delay: -0.4167s;
+  -o-animation-delay: -0.4167s;
+  animation-delay: -0.4167s;
+}
+div.loadingSpinner div.bar9 {
+  -webkit-transform: rotate(240deg) translate(0, -130%);
+  -moz-transform: rotate(240deg) translate(0, -130%);
+  -ms-transform: rotate(240deg) translate(0, -130%);
+  -o-transform: rotate(240deg) translate(0, -130%);
+  transform: rotate(240deg) translate(0, -130%);
+  -webkit-animation-delay: -0.333s;
+  -moz-animation-delay: -0.333s;
+  -o-animation-delay: -0.333s;
+  animation-delay: -0.333s;
+}
+div.loadingSpinner div.bar10 {
+  -webkit-transform: rotate(270deg) translate(0, -130%);
+  -moz-transform: rotate(270deg) translate(0, -130%);
+  -ms-transform: rotate(270deg) translate(0, -130%);
+  -o-transform: rotate(270deg) translate(0, -130%);
+  transform: rotate(270deg) translate(0, -130%);
+  -webkit-animation-delay: -0.2497s;
+  -moz-animation-delay: -0.2497s;
+  -o-animation-delay: -0.2497s;
+  animation-delay: -0.2497s;
+}
+div.loadingSpinner div.bar11 {
+  -webkit-transform: rotate(300deg) translate(0, -130%);
+  -moz-transform: rotate(300deg) translate(0, -130%);
+  -ms-transform: rotate(300deg) translate(0, -130%);
+  -o-transform: rotate(300deg) translate(0, -130%);
+  transform: rotate(300deg) translate(0, -130%);
+  -webkit-animation-delay: -0.167s;
+  -moz-animation-delay: -0.167s;
+  -o-animation-delay: -0.167s;
+  animation-delay: -0.167s;
+}
+div.loadingSpinner div.bar12 {
+  -webkit-transform: rotate(330deg) translate(0, -130%);
+  -moz-transform: rotate(330deg) translate(0, -130%);
+  -ms-transform: rotate(330deg) translate(0, -130%);
+  -o-transform: rotate(330deg) translate(0, -130%);
+  transform: rotate(330deg) translate(0, -130%);
+  -webkit-animation-delay: -0.0833s;
+  -moz-animation-delay: -0.0833s;
+  -o-animation-delay: -0.0833s;
+  animation-delay: -0.0833s;
+}
+.sa__sub_loader {
+  position: absolute;
+  top: 140px;
+}
+/*Spinner Css End*/
+.sharedauth-loading.sharedauth-complete .sa__loader {
+  display: none;
+}
+.sharedauth-loading .sa__loader .loadingSpinner {
+  background-image: none !important;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.tempCancel {
+  float: left;
+  width: 80px;
+  height: 75px;
+}
+.linkDecoration {
+  text-decoration: underline !important;
+}
+/** DE-SE Card #226, 204 UI changes **/
+#btnShow.hide {
+  display: none;
+}
+/*
+.hideStepup {
+  display: block !important;
+}
+*/
+.aw-authenticator-footer {
+  margin: 20px 20px 0 0 !important;
+}
+/*First Header spacing OTP screen*/
+div#stepupSection.sharedAuthContainer
+#authenticatorheader {
+    margin-bottom: 30px
+}
+/*2nd paragraph spacing */
+div#stepupSection.sharedAuthContainer
+#otpFirstDisclosure {
+    margin-bottom: 20px;
+}
+/*2nd paragraph font*/
+div#stepupSection.sharedAuthContainer
+#otpFirstDisclosure p {
+    font-weight: bold;
+    font-size: 14px;
+}
+/*3rd paragraph spacing*/
+div#stepupSection.sharedAuthContainer
+#otpSecondDisclosure {
+    margin-bottom: 30px;
+}
+/*2nd paragraph nold*/
+div#stepupSection.sharedAuthContainer
+#otpSecondDisclosure p {
+    font-size: 14px;
+}
+div#customUI p {
+    font-size: 14px;
+}
+div#stepupSection.sharedAuthContainer
+#otpError {
+    margin-bottom: 20px;
+}
+div#stepupSection.sharedAuthContainer
+#customUI {
+    padding: 30px;
+}
+    /*# sourceMappingURL=SharedAuthStyles.css.map */
+/* END of Href-../../../../content/Shared/Styles/SharedAuthStyles/ShareAuthStepUpStyles/SharedAuthStyles.css*/
